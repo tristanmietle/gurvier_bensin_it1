@@ -24,6 +24,14 @@ body {
     grid-area: hero;
 }
 
+.breakingnews {
+    text-align: center;
+}
+
+.vanlignews {
+    text-align: center;
+}
+
 .main {
     grid-area: main;
 }
