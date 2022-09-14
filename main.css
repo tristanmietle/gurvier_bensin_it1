@@ -1,3 +1,45 @@
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.header {
+    grid-area: header;
+}
+
+.menu {
+    grid-area: menu;
+}
+
+.hero {
+    grid-area: hero;
+}
+
+.main {
+    grid-area: main;
+}
+
+.banner {
+    grid-area: banner;
+}
+
+.extra {
+    grid-area: extra;
+}
+
+.image {
+    grid-area: image;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 40px 2fr repeat(4, 1fr);
+    grid-template-areas:
+        "header header header header"
+        "hero hero hero hero"
+        "menu main main main"
+        "menu main main main"
+        "menu banner banner banner"
+        "menu extra image image";
 }
