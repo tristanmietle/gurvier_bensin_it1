@@ -1,1 +1,2 @@
-# gurvier_bensin_it1
+# Gurry + Tristan samarbeid
+# Abba og Rian er dogettydogwater
