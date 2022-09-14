@@ -3,7 +3,16 @@ body {
 }
 
 
-.header {
+.header-left {
+    grid-area: headerleft;
+}
+
+.header-right {
+    text-align: right;
+    grid-area: headerright;
+}
+
+.header{
     grid-area: header;
 }
 
@@ -36,7 +45,7 @@ body {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 40px 2fr repeat(4, 1fr);
     grid-template-areas:
-        "header header header header"
+        "headerleft header header headerright"
         "hero hero hero hero"
         "menu main main main"
         "menu main main main"
