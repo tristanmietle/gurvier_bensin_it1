@@ -52,3 +52,18 @@ body {
         "menu banner banner banner"
         "menu extra image image";
 }
+
+img{
+    border: white 3px solid;
+    
+}
+
+img:hover {
+    border: blue 3px solid;
+    transition: 0.4s;
+}
+
+img:active {
+    border: red 3px solid;
+    transition: 0.1s;
+}
