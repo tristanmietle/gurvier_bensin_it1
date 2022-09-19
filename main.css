@@ -34,6 +34,10 @@ body {
 
 }
 
+.l{
+    grid-area: l;
+}
+
 .main {
     grid-area: main;
 }
@@ -53,15 +57,15 @@ body {
 .grid {
     border: black 2px solid;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(4, 1fr);
     grid-template-areas:
-        "headerleft header header headerright"
-        "hero hero hero hero"
-        "menu main main main"
-        "menu main main main"
-        "menu banner banner banner"
-        "menu extra image image";
+        "headerleft headerleft headerleft header header header header header header headerright headerright headerright"
+        "hero hero hero hero hero hero hero hero hero hero hero hero"
+        "menu menu menu main main main main main main main main main"
+        "menu menu menu main main main main main main main main main"
+        "menu menu menu banner banner banner banner banner banner banner banner banner"
+        "menu menu menu extra extra extra image image image image image image";
 }
 
 img{
