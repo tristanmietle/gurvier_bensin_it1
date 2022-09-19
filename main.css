@@ -51,6 +51,7 @@ body {
 }
 
 .grid {
+    border: black 2px solid;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 40px 2fr repeat(4, 1fr);
@@ -83,4 +84,8 @@ button {
     padding: 10px 15px;
     border-radius: 20px;
     font-size: medium;
+}
+
+div{
+    border: black 2px solid;
 }
