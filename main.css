@@ -90,6 +90,39 @@ button {
     font-size: medium;
 }
 
+
+
 div{
     border: black 2px solid;
+}
+
+
+
+ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+    
+}
+
+li{
+	display: inline-block;
+	width: 33%;
+    text-align: center;
+    
+}
+
+ul li a{
+	display: inline-block;
+	width: 100%;
+	background-color: blue;
+	color: white;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 5px 0;
+    border-radius: 20px;
+}
+
+a:hover{
+	background-color: cornflowerblue;
 }
