@@ -78,19 +78,6 @@ img:active {
     transition: 0.1s;
 }
 
-html {
-    font-family: Arial, Helvetica, sans-serif;
-    background: url(/resturant/bilder/mcdbackg1.jpeg) no-repeat center center fixed;
-    background-size: cover;
-}
-
-.content {
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-
 button {
     width: auto;
     padding: 10px 15px;
