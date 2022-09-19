@@ -54,7 +54,7 @@ body {
     border: black 2px solid;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 40px 2fr repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     grid-template-areas:
         "headerleft header header headerright"
         "hero hero hero hero"
