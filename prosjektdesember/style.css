@@ -1,4 +1,4 @@
-main{
+body{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: minmax(4px, auto);
@@ -8,5 +8,5 @@ main{
 
 header{
     display: flex;
-    
+
 }
