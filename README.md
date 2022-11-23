@@ -1,2 +1,2 @@
 # Gurry + Tristan samarbeid
-# Abba og Rian er dogettydogwater
+# Abba, Æksy og Rian er dogettydogwater
