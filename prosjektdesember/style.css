@@ -123,6 +123,12 @@ section .text-container .text-box h3 {
 
 /*Slutt på scroll-effekt*/ 
 
+/*Navnene til skaperne*/
+section h3{
+    position: absolute;
+    top: 90%;  
+}
+
 .sticky {
 	position: -webkit-sticky;
 	position: sticky;
