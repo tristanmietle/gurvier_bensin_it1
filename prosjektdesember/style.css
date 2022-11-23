@@ -1,15 +1,30 @@
-main {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: minmax(4px, auto);
-    grid-template-areas:
-        "";
+nav{
+    position: sticky;
 }
 
-header {
+nav ul{
     display: flex;
-    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li{
+    flex-grow: 1;
+    flex-basis: 100px;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    padding: 1rem;
+    background-color: #FBFBF2;
+    color: #223843;
+    width: 100%;
     text-align: center;
+}
+nav a:hover{
+    background-color: blue;
 }
 
 * {
