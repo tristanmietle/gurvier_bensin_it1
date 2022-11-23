@@ -23,6 +23,9 @@ body {
     background: #42455a;
 }
 
+/*Start på scroll-effekt*/
+/*Inspirasjon fra: https://alvarotrigo.com/blog/css-animations-scroll/ */
+
 section {
     min-height: 100vh;
     display: flex;
@@ -101,4 +104,35 @@ section .text-container .text-box h3 {
 .reveal.active {
     transform: translateY(0);
     opacity: 1;
+}
+
+/*Slutt på scroll-effekt*/ 
+
+.sticky {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}
+
+.sticky ul{
+    display: flex;
+    padding: 10px 0;
+    background-color: #d77a61;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sticky a{
+    color: white;
+    text-decoration: none;
+}
+
+.sticky li{
+    border-bottom: #d77a61 solid 2px;
+}
+
+.sticky li:hover{
+    transition: 0.3s;
+    border-bottom: white solid 2px;
 }
