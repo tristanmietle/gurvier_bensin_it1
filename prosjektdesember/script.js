@@ -1,3 +1,5 @@
+/* Inspirasjon fra: https://alvarotrigo.com/blog/css-animations-scroll/ */
+
 function reveal() {
     var reveals = document.querySelectorAll(".reveal");
   
