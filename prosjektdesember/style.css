@@ -1,12 +1,13 @@
-body{
+main{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: minmax(4px, auto);
     grid-template-areas: 
-    "header header header header header header header header header header header header";
+    "";
 }
 
 header{
     display: flex;
-
+    justify-content: center;
+    text-align: center;
 }
