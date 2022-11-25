@@ -107,10 +107,11 @@ section .text-container .text-box {
 /*Navnene til skaperne*/
 section h3{
     position: absolute;
-    top: 90%;  
+    bottom: 8%;  
 }
 
 #frontpg{
     background-image: url('bilder/fb-privacy.png');
     background-size: cover;
+    background-position: center;
 }
