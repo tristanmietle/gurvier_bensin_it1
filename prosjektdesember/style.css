@@ -131,8 +131,3 @@ section h3{
     background-image: url('bilder/fb-privacy.png');
     background-size: cover;
 }
-
-img[src="bilder/straight-right-arrow.png"] {
-    position: absolute;
-    left: 95%;
-}
