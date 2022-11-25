@@ -54,7 +54,6 @@ section:nth-child(1) {
 
 section:nth-child(2) {
     color: #42455a;
-    background: #e0ffff;
 }
 
 section:nth-child(3) {
@@ -156,4 +155,9 @@ section h3{
 .sticky li:hover{
     transition: 0.3s;
     border-bottom: white solid 2px;
+}
+
+#frontpg{
+    background-image: url('bilder/fb-privacy.png');
+    background-size: cover;
 }
