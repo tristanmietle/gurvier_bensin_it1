@@ -1,3 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: #42455a;
+}
+
 .sticky{
     position: -webkit-sticky;
     position: sticky;
@@ -33,17 +44,6 @@
     color: #D77A61;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-}
-
-body {
-    background: #42455a;
-}
-
 /*Start på scroll-effekt*/
 /*Inspirasjon fra: https://alvarotrigo.com/blog/css-animations-scroll/ */
 
@@ -76,10 +76,14 @@ section .text-container {
 section .text-container .text-box {
     margin: 20px;
     padding: 20px;
-    background: #00c2cb;
+    background: #D77A61;
 }
 
-@media (max-width: 900px) {
+.text-box {
+    border-radius: 20px;
+}
+
+@media (max-width: 800px) {
     section h1 {
         font-size: 2rem;
         text-align: center;
