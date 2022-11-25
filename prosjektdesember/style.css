@@ -111,7 +111,7 @@ section .text-container .text-box {
     position: relative;
     transform: translateY(150px);
     opacity: 0;
-    transition: 1s all ease;
+    transition: 0.75s all ease;
 }
 
 .reveal.active {
