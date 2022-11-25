@@ -121,11 +121,6 @@ section .text-container .text-box {
 
 /*Slutt på scroll-effekt*/ 
 
-.text-box h3 {
-    font-style: italic;
-}
-
-
 /*Navnene til skaperne*/
 section h3{
     position: absolute;
