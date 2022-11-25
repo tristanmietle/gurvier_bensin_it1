@@ -1,31 +1,41 @@
-/*nav{
+.sticky{
+    position: -webkit-sticky;
     position: sticky;
+    top: 0;
 }
 
-nav ul{
+.sticky ul{
     display: flex;
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-nav li{
+.sticky li{
     flex-grow: 1;
     flex-basis: 100px;
 }
 
-nav a{
+.sticky a{
     display: block;
     text-decoration: none;
     padding: 1rem;
-    background-color: #FBFBF2;
+    background-color: #D77A61;
     color: #223843;
     width: 100%;
     text-align: center;
 }
-nav a:hover{
-    background-color: blue;
-}*/
+
+.sticky a {
+    color: white;
+    font-weight: 600;
+}
+
+.sticky a:hover{
+    transition: 0.3s;
+    background-color: #ab7e71;
+    color: black;
+}
 
 * {
     margin: 0;
@@ -126,35 +136,6 @@ section .text-container .text-box h3 {
 section h3{
     position: absolute;
     top: 90%;  
-}
-
-.sticky {
-	position: -webkit-sticky;
-	position: sticky;
-	top: 0;
-}
-
-.sticky ul{
-    display: flex;
-    padding: 10px 0;
-    background-color: #d77a61;
-    list-style-type: none;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.sticky a{
-    color: white;
-    text-decoration: none;
-}
-
-.sticky li{
-    border-bottom: #d77a61 solid 2px;
-}
-
-.sticky li:hover{
-    transition: 0.3s;
-    border-bottom: white solid 2px;
 }
 
 #frontpg{
