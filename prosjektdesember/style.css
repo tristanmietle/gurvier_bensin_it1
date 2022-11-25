@@ -21,20 +21,20 @@
     text-decoration: none;
     padding: 1rem;
     background-color: #D77A61;
-    color: #223843;
+    color: #42455a;
     width: 100%;
     text-align: center;
 }
 
 .sticky a {
-    color: white;
+    color: #a;
     font-weight: 600;
 }
 
 .sticky a:hover{
     transition: 0.3s;
-    background-color: #ab7e71;
-    color: black;
+    background-color: #42455a;
+    color: #D77A61;
 }
 
 * {
@@ -131,6 +131,11 @@ section .text-container .text-box h3 {
 }
 
 /*Slutt på scroll-effekt*/ 
+
+.text-box h3 {
+    font-style: italic;
+}
+
 
 /*Navnene til skaperne*/
 section h3{
