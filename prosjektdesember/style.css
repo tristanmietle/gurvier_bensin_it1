@@ -61,7 +61,7 @@ section .container {
     margin: 100px;
 }
 
-section h1 {
+#frontpg h1 {
     font-size: 3rem;
     margin: 20px;
     color: #42455a; /*setter farge på hovedoverskrift*/
@@ -127,7 +127,7 @@ section .text-container .text-box {
 /*Slutt på scroll-effekt*/ 
 
 /*Navnene til skaperne*/
-section h3{
+#frontpg h3{
     position: absolute;
     bottom: 8%;
     color: #42455a; /*Farge på navn*/
