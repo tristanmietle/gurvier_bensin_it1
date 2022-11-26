@@ -64,26 +64,35 @@ section .container {
 section h1 {
     font-size: 3rem;
     margin: 20px;
+    color: #42455a; /*setter farge på hovedoverskrift*/
 }
 
 section h2 {
     font-size: 40px;
     text-align: center;
     text-transform: uppercase;
+    color: #E0FFFF; /*setter farge på overskrift*/
 }
 
 section .text-container {
     display: flex;
+    color: #42455a; /*setter farge på tekst*/
 }
 
 section .text-container .text-box {
     margin: 20px;
     padding: 20px;
     background: #D77A61;
+    flex: 1;
+    max-width: 500px; /*Setter max bredde på boksene*/
 }
 
 .text-box {
     border-radius: 20px;
+}
+
+.text-box p b {
+    font-style: italic;
 }
 
 @media (max-width: 800px) {
@@ -114,7 +123,8 @@ section .text-container .text-box {
 /*Navnene til skaperne*/
 section h3{
     position: absolute;
-    bottom: 8%;  
+    bottom: 8%;
+    color: #42455a; /*Farge på navn*/
 }
 
 #frontpg{
