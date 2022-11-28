@@ -20,11 +20,12 @@ body {
     margin: 0;
     padding: 0;
     list-style: none;
+    
 }
 
 .sticky li{
     flex-grow: 1;
-    flex-basis: 100px;
+    flex-basis: auto;
 }
 
 .sticky a{
@@ -102,11 +103,7 @@ section .text-container .text-box {
 }
 
 @media (max-width: 800px) {
-    li a {
-        font-size: 0.75rem;
-    }
-
-    section h1 {
+section h1 {
         font-size: 2rem;
         text-align: center;
     }
