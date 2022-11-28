@@ -102,6 +102,10 @@ section .text-container .text-box {
 }
 
 @media (max-width: 800px) {
+    li a {
+        font-size: 0.75rem;
+    }
+
     section h1 {
         font-size: 2rem;
         text-align: center;
