@@ -48,6 +48,12 @@ body {
     border-bottom: #D77A61 solid 2px;
 }
 
+.aktiv a{
+    background-color: #42455a;
+    color: #D77A61;
+    border-bottom: #D77A61 solid 2px;
+}
+
 /*Start på scroll-effekt*/
 /*Inspirasjon fra: https://alvarotrigo.com/blog/css-animations-scroll/ */
 

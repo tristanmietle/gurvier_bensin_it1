@@ -9,18 +9,14 @@
   <style>
 
 body {
-  background: #ABCDEF;
+  background: #42455a;
   font-family: Assistant, sans-serif;
   display: flex;
   min-height: 90vh;
 }
 .login {
   color: white;
-  background: #136a8a;
-  background: 
-    -webkit-linear-gradient(to right, #267871, #136a8a);
-  background: 
-    linear-gradient(to right, #267871, #136a8a); 
+  background: #d77a61;
   margin: auto;
   box-shadow: 
     0px 2px 10px rgba(0,0,0,0.2), 
@@ -92,14 +88,14 @@ body {
 <!-- partial:index.partial.html -->
 <section class='login' id='login'>
   <div class='head'>
-  <h1 class='company'>Fakebook</h1>
+    <img src="bilder/fakebook.png" width="200px" alt="">
   </div>
   <p class='msg'>Velkommen tilbake</p>
   <div class='form'>
-    <form>
-  <input type="text" placeholder='Brukernavn' class='text' id='username' required><br>
-  <input type="password" placeholder='••••••••••' class='password'><br>
-  <a href="personvern.html" class='btn-login' id='do-login'>Login</a>
+    <form name="logginnskjema" action="personvern.html">
+  <input type="text" placeholder='Falsk brukernavn' class='text' id='username' required><br>
+  <input type="password" placeholder='Falsk passord' class='password'><br>
+  <a href="personvern.html" class='btn-login' id='do-login'>Logg inn</a>
     </form>
   </div>
 </section>
