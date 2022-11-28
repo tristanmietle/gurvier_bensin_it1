@@ -98,14 +98,8 @@ section .text-container .text-box {
     border-radius: 20px;
 }
 
-.text-box p b {
+.text-box p {
     font-style: italic;
-}
-
-.text-box p::first-letter { /*Stor første bokstav*/
-    font-size: 1.2em;
-    font-weight: 600;
-    font: Sans-serif;
 }
 
 @media (max-width: 800px) {
