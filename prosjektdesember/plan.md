@@ -1,4 +1,8 @@
 jobbe:
-    rydde i style
-    finne informasjon
-    farger
+    farger -g
+    tekst -t
+    bilder -t
+    rydde i style -tg
+    js -tg
+    sticky overskrift -tg
+
