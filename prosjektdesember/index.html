@@ -9,6 +9,87 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
+<style>
+    /*Start på scroll-effekt*/
+/*Inspirasjon fra: https://alvarotrigo.com/blog/css-animations-scroll/ */
+
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section .container {
+    margin: 100px;
+}
+
+#frontpg h1 {
+    font-size: 3rem;
+    margin: 20px;
+    color: #42455a; /*setter farge på hovedoverskrift*/
+}
+
+section h2 {
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #E0FFFF; /*setter farge på overskrift*/
+}
+
+section .text-container {
+    display: flex;
+    color: #42455a; /*setter farge på tekst*/
+}
+
+section .text-container .text-box {
+    margin: 20px;
+    padding: 20px;
+    background: #D77A61;
+    flex: 1;
+    max-width: 500px; /*Setter max bredde på boksene*/
+}
+
+.text-box {
+    border-radius: 20px;
+}
+
+.text-box p {
+    font-style: italic;
+}
+
+@media (max-width: 800px) {
+section h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    section .text-container {
+        flex-direction: column;
+    }
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 0.75s all ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/*Slutt på scroll-effekt*/ 
+
+/*Navnene til skaperne*/
+#frontpg h3{
+    position: absolute;
+    bottom: 8%;
+    color: #42455a; /*Farge på navn*/
+}
+</style>
 
 <body>
     
