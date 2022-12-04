@@ -22,9 +22,10 @@
         }
 
         .header h1 {
+            position: relative;
+            background: linear-gradient(to right, #42455a, #d77a61);
             padding: 10px;
-            background-color: #d77a61;
-            background: linear-gradient(to right, #424551, #d77a61);
+
         }
 
         img[src="bilder/personvern-bred-2.jpg"]{
@@ -61,15 +62,57 @@
             "header header header header header header header header header header header header"
             "tomv tomv tittel main main main main main main tomh tomh tomh"
 }
+
+        @media (max-width: 800px) {
+
+            .problem{
+                grid-area: problem;
+            }
+
+            .personv{
+                grid-area: personv;
+            }
+            
+            .sosmed{
+                grid-area: sosmed;
+            }
+
+            .fb{
+                grid-area: fb;
+            }
+
+            .navgrid {
+                display: grid;
+                  grid-template-columns: repeat(2, 1fr);
+                  grid-auto-rows: minmax(auto, auto);
+                  grid-template-areas:
+                  "problem personv"
+                  "sosmed fb"
+            }
+
+            .main, .tittel{
+                margin: 0 20px;
+            }
+
+            .grid {
+                display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(auto, auto);
+    grid-template-areas:
+            "header header header header header header header header header header header header"
+            "tittel tittel tittel tittel tomh tomh tomh tomh tomh tomh tomh tomh"
+            "main main main main main main main main main main main main"
+            }
+}
     </style>
 </head>
 <body>
-    <nav class="sticky">
+    <nav class="sticky navgrid">
         <ul>
-            <li><a href="index.html">Problemstilling</a></li>
-            <li class="aktiv"><a href="personvern.html">Personvern</a></li>
-            <li><a href="sosialemedier.html">Sosiale&nbspMedier</a></li>
-            <li><a href="facebook.html">Facebook</a></li>
+            <li class="problem"><a href="index.html">Problemstilling</a></li>
+            <li class="aktiv person"><a href="personvern.html">Personvern</a></li>
+            <li class="sosmed"><a href="sosialemedier.html">Sosiale&nbspMedier</a></li>
+            <li class="fb"><a href="facebook.html">Facebook</a></li>
         </ul>
     </nav>
 
