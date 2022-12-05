@@ -5,6 +5,7 @@
   <title>Fakebook</title>
   <link rel="stylesheet" href="">
 
+
   <style>
 
 body {
@@ -75,31 +76,25 @@ body {
   color: dimgray;
   transition: 0.5s;
 }
-.login .forgot {
-  text-decoration: none;
-  color: white;
-  float: right;
-}
+
 
   </style>
+
 </head>
 <body>
 
-<section class='login' id='login'>
+<section class='login'>
   <div class='head'>
     <img src="bilder/fakebook.png" width="200px" alt="">
   </div>
   <p class='msg'>Velkommen tilbake</p>
   <div class='form'>
-    <form name="logginnskjema" action="personvern.html">
-  <input type="text" placeholder='Falsk brukernavn' class='text' id='username' required><br>
-  <input type="password" placeholder='Falsk passord' class='password'><br>
-  <a href="personvern.html" class='btn-login' id='do-login'>Logg inn</a>
+    <form action="personvern.html">
+      <input type="text" placeholder='Falsk brukernavn' class='text' username='username' required><br>
+      <input type="password" placeholder='Falsk passord' class='password'><br>
+      <button class='btn-login'>Logg inn</button>
     </form>
   </div>
 </section>
-
-  <script src="script.js"></script>
-
 </body>
 </html>
