@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif
 }
 
 body {
@@ -21,6 +21,12 @@ body {
     padding: 0;
     list-style: none;
     
+}
+
+.main {
+    font-weight: 380;
+    line-height: 1.45;
+    letter-spacing: .005em;
 }
 
 .sticky li{
