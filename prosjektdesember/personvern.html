@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personvern</title>
     <link rel="stylesheet" href="style.css">
-    <script >
+    <script>
         var username = document.getElementById('username');
     </script>
 
@@ -27,9 +28,9 @@
 
         }
 
-        img[src="bilder/personvern-bred-2.jpg"]{
+        img[src="bilder/personvern-bred-2.jpg"] {
             width: 100vw;
-            
+
         }
 
         .main {
@@ -49,62 +50,81 @@
 
         .tittel {
             grid-area: tittel;
+            font-size: 1.2em;
+            font-weight: 400;
+            font-style: bold;
+        }
 
+        p a {
+            font-style: italic;
+        }
+
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        .arrow-button {
+            position: fixed;
+            bottom: 2%;
+            right: 2%;
         }
 
 
         .grid {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-auto-rows: minmax(auto, auto);
-    grid-template-areas:
-            "header header header header header header header header header header header header"
-            "tomv tomv tittel main main main main main main tomh tomh tomh"
-}
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-auto-rows: minmax(auto, auto);
+            grid-template-areas:
+                "header header header header header header header header header header header header"
+                "tomv tittel tittel main main main main main main tomh tomh tomh"
+        }
 
         @media (max-width: 800px) {
 
-            .problem{
+            .problem {
                 grid-area: problem;
             }
 
-            .personv{
+            .personv {
                 grid-area: personv;
             }
-            
-            .sosmed{
+
+            .sosmed {
                 grid-area: sosmed;
             }
 
-            .fb{
+            .fb {
                 grid-area: fb;
             }
 
             .navgrid {
                 display: grid;
-                  grid-template-columns: repeat(2, 1fr);
-                  grid-auto-rows: minmax(auto, auto);
-                  grid-template-areas:
-                  "problem personv"
-                  "sosmed fb"
+                grid-template-columns: repeat(2, 1fr);
+                grid-auto-rows: minmax(auto, auto);
+                grid-template-areas:
+                    "problem personv"
+                    "sosmed fb"
             }
 
-            .main, .tittel{
+            .main,
+            .tittel {
                 margin: 0 20px;
             }
 
             .grid {
                 display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-auto-rows: minmax(auto, auto);
-    grid-template-areas:
-            "header header header header header header header header header header header header"
-            "tittel tittel tittel tittel tomh tomh tomh tomh tomh tomh tomh tomh"
-            "main main main main main main main main main main main main"
+                grid-template-columns: repeat(12, 1fr);
+                grid-auto-rows: minmax(auto, auto);
+                grid-template-areas:
+                    "header header header header header header header header header header header header"
+                    "tittel tittel tittel tittel tomh tomh tomh tomh tomh tomh tomh tomh"
+                    "main main main main main main main main main main main main"
             }
-}
+        }
     </style>
 </head>
+
 <body>
     <nav class="sticky ">
         <ul>
@@ -115,23 +135,65 @@
         </ul>
     </nav>
 
-<section class="grid">
+    <section class="grid">
 
-    <div class="header">
-        <h1>Personvern</h1>
-        <img src="bilder/personvern-bred-2.jpg" alt="">
-    </div>
-    <div class="tittel"> Hva er personvern?</div>
+        <div class="header">
+            <h1>Personvern</h1>
+            <img src="bilder/personvern-bred-3.jpg" width="100%" alt="">
+        </div>
+        <div class="tittel"> Hva er personvern?</div>
 
-    <div class="main">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam libero modi, sapiente excepturi sunt, odio ut quisquam quos culpa sint consequuntur quas ipsam qui! Commodi praesentium illo laboriosam consectetur nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam libero modi, sapiente excepturi sunt, odio ut quisquam quos culpa sint consequuntur quas ipsam qui! Commodi praesentium illo laboriosam consectetur nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam libero modi, sapiente excepturi sunt, odio ut quisquam quos culpa sint consequuntur quas ipsam qui! Commodi praesentium illo laboriosam consectetur nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam libero modi, sapiente excepturi sunt, odio ut quisquam quos culpa sint consequuntur quas ipsam qui! Commodi praesentium illo laboriosam consectetur nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam libero modi, sapiente excepturi sunt, odio ut quisquam quos culpa sint consequuntur quas ipsam qui! Commodi praesentium illo laboriosam consectetur nobis.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam libero modi, sapiente excepturi sunt, odio ut quisquam quos culpa sint consequuntur quas ipsam qui! Commodi praesentium illo laboriosam consectetur nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam libero modi, sapiente excepturi sunt, odio ut quisquam quos culpa sint consequuntur quas ipsam qui! Commodi praesentium illo laboriosam consectetur nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam libero modi, sapiente excepturi sunt, odio ut quisquam quos culpa sint consequuntur quas ipsam qui! Commodi praesentium illo laboriosam consectetur nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam libero modi, sapiente excepturi sunt, odio ut quisquam quos culpa sint consequuntur quas ipsam qui! Commodi praesentium illo laboriosam consectetur nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam libero modi, sapiente excepturi sunt, odio ut quisquam quos culpa sint consequuntur quas ipsam qui! Commodi praesentium illo laboriosam consectetur nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam libero modi, sapiente excepturi sunt, odio ut quisquam quos culpa sint consequuntur quas ipsam qui! Commodi praesentium illo laboriosam consectetur nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam libero modi, sapiente excepturi sunt, odio ut quisquam quos culpa sint consequuntur quas ipsam qui! Commodi praesentium illo laboriosam consectetur nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam libero modi, sapiente excepturi sunt, odio ut quisquam quos culpa sint consequuntur quas ipsam qui! Commodi praesentium illo laboriosam consectetur nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam libero modi, sapiente excepturi sunt, odio ut quisquam quos culpa sint consequuntur quas ipsam qui! Commodi praesentium illo laboriosam consectetur nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam libero modi, sapiente excepturi sunt, odio ut quisquam quos culpa sint consequuntur quas ipsam qui! Commodi praesentium illo laboriosam consectetur nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam libero modi, sapiente excepturi sunt, odio ut quisquam quos culpa sint consequuntur quas ipsam qui! Commodi praesentium illo laboriosam consectetur nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam libero modi, sapiente excepturi sunt, odio ut quisquam quos culpa sint consequuntur quas ipsam qui! Commodi praesentium illo laboriosam consectetur nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam libero modi, sapiente excepturi sunt, odio ut quisquam quos culpa sint consequuntur quas ipsam qui! Commodi praesentium illo laboriosam consectetur nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam libero modi, sapiente excepturi sunt, odio ut quisquam quos culpa sint consequuntur quas ipsam qui! Commodi praesentium illo laboriosam consectetur nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam libero modi, sapiente excepturi sunt, odio ut quisquam quos culpa sint consequuntur quas ipsam qui! Commodi praesentium illo laboriosam consectetur nobis.
-    </div>
+        <div class="main">
+            <p>Personvern handler, ifølge Datatilsynets nettsider, om retten til et privatliv og retten til å bestemme
+                over egne personopplysninger <a
+                    href="https://www.datatilsynet.no/rettigheter-og-plikter/hva-er-personvern/">(Datatilsynet,
+                    2019)</a>. Det kan derfor omhandle alt fra små detaljer om familien din, til større å viktigere ting
+                som kan påvirke livet ditt om det blir snappet opp av feil folk. Det er derfor i Norge og andre land et
+                sett med regler for å regulere hvor denne informasjonen kan havne. Du som bruker har retten til å velge,
+                vite og ha kontroll om hva som skjer med data som omhandler deg. Derfor skal brukere av datasystem hvem
+                som samler inn dataen, hvor lenge det skal lagres, hva det samles inn for og hva den brukes til
+                (Langslet et al. 2020, s. 361).</p>
+            <p>Hvor annet lovverk ikke er satt på plass for å regulere bruk av brukerdata, kommer personopplysningsloven
+                inn. Det vil si at helsesektoren ikke går under dette ettersom de har andre regelverk som omhandler
+                dette temaet (Langslet et al. 2020, s. 361).</p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam libero modi, sapiente excepturi sunt, odio ut
+            quisquam quos culpa sint consequuntur quas ipsam qui! Commodi praesentium illo laboriosam consectetur nobis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam libero modi, sapiente excepturi sunt, odio ut
+            quisquam quos culpa sint consequuntur quas ipsam qui! Commodi praesentium illo laboriosam consectetur nobis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam libero modi, sapiente excepturi sunt, odio ut
+            quisquam quos culpa sint consequuntur quas ipsam qui! Commodi praesentium illo laboriosam consectetur nobis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam libero modi, sapiente excepturi sunt, odio ut
+            quisquam quos culpa sint consequuntur quas ipsam qui! Commodi praesentium illo laboriosam consectetur nobis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam libero modi, sapiente excepturi sunt, odio ut
+            quisquam quos culpa sint consequuntur quas ipsam qui! Commodi praesentium illo laboriosam consectetur nobis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam libero modi, sapiente excepturi sunt, odio ut
+            quisquam quos culpa sint consequuntur quas ipsam qui! Commodi praesentium illo laboriosam consectetur nobis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam libero modi, sapiente excepturi sunt, odio ut
+            quisquam quos culpa sint consequuntur quas ipsam qui! Commodi praesentium illo laboriosam consectetur nobis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam libero modi, sapiente excepturi sunt, odio ut
+            quisquam quos culpa sint consequuntur quas ipsam qui! Commodi praesentium illo laboriosam consectetur nobis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam libero modi, sapiente excepturi sunt, odio ut
+            quisquam quos culpa sint consequuntur quas ipsam qui! Commodi praesentium illo laboriosam consectetur nobis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam libero modi, sapiente excepturi sunt, odio ut
+            quisquam quos culpa sint consequuntur quas ipsam qui! Commodi praesentium illo laboriosam consectetur nobis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam libero modi, sapiente excepturi sunt, odio ut
+            quisquam quos culpa sint consequuntur quas ipsam qui! Commodi praesentium illo laboriosam consectetur nobis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam libero modi, sapiente excepturi sunt, odio ut
+            quisquam quos culpa sint consequuntur quas ipsam qui! Commodi praesentium illo laboriosam consectetur nobis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam libero modi, sapiente excepturi sunt, odio ut
+            quisquam quos culpa sint consequuntur quas ipsam qui! Commodi praesentium illo laboriosam consectetur nobis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam libero modi, sapiente excepturi sunt, odio ut
+            quisquam quos culpa sint consequuntur quas ipsam qui! Commodi praesentium illo laboriosam consectetur nobis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam libero modi, sapiente excepturi sunt, odio ut
+            quisquam quos culpa sint consequuntur quas ipsam qui! Commodi praesentium illo laboriosam consectetur nobis.
+            
+        </div>
 
-</section>
-
+    </section>
+    <a href="logg-inn.html"><button class="arrow-button">Utforsk mer<span class="arrow"></span></button></a>
     <script type="text/javascript">
         document.write(username);
     </script>
 </body>
+
 </html>

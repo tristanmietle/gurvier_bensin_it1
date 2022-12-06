@@ -24,6 +24,7 @@ body {
 }
 
 .main {
+    font-size: 1.1em;
     font-weight: 380;
     line-height: 1.45;
     letter-spacing: .005em;
