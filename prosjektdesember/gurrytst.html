@@ -11,11 +11,15 @@
 <!--inspirert av https://www.youtube.com/watch?v=aEj0Wu33hJM-->
 <input type="text" id="username" placeholder="bap">
 
-<input type="button" id="button" value="trykk">
+<input type="button" id="button" value="trykk" onclick="myFunction()">
+
+<div id="myDIV">
+    This is my DIV element.
 
 <p>tell me a fact</p>
 <p id="usernamedisplay"></p>
-    
+</div>
+
     <script>
         const username = document.getElementById('username')
         const button = document.getElementById('button')
@@ -27,6 +31,15 @@
         }
 
         button.addEventListener('click', boks)
+
+        function myFunction() {
+        var x = document.getElementById("myDIV");
+            if (x.style.display === "none") {
+            x.style.display = "block";
+            } else {
+            x.style.display = "none";
+            }
+    }
     </script>
 </body>
 </html>
