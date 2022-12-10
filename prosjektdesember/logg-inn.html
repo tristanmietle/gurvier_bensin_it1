@@ -4,9 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <title>Fakebook</title>
-  <link rel="stylesheet" href="">
-
-
   <style>
     body {
       background: #42455a;
@@ -33,15 +30,11 @@
       justify-content: center;
     }
 
-    .login .head .company {
-      font-size: 2.2em;
-    }
-
     .login .msg {
       text-align: center;
     }
 
-    .login .form input[type=text].text {
+    .login input[type=text] {
       border: none;
       background: none;
       box-shadow: 0px 2px 0px 0px white;
@@ -51,11 +44,11 @@
       outline: none;
     }
 
-    .login .form .text::placeholder {
+    .login input[type=text]::placeholder {
       color: #D3D3D3;
     }
 
-    .login .form input[type=password].password {
+    .login input[type=password] {
       border: none;
       background: none;
       box-shadow: 0px 2px 0px 0px white;
@@ -67,49 +60,154 @@
       margin-top: 20px;
     }
 
-    .login .form .password::placeholder {
+    .login input[type=password]::placeholder {
       color: #D3D3D3;
     }
 
-    .login .form .btn-login {
+    #button {
       background: none;
       text-decoration: none;
       color: white;
       box-shadow: 0px 0px 0px 2px white;
-      border-radius: 3px;
+      border-radius: 20px;
       padding: 5px 2em;
       transition: 0.5s;
     }
 
-    .login .form .btn-login:hover {
+    #button:hover {
+      cursor: pointer;
       background: white;
       color: dimgray;
       transition: 0.5s;
     }
+
+    .arrow-button {
+      display: flex;
+      color: #42455a;
+      background-color: #D77A61;
+      padding: 10px 16px;
+      border-radius: 20px;
+      transition: all .3s ease;
+      font-weight: bold;
+      cursor: pointer;
+      align-items: center;
+      font-size: 14px;
+      position: absolute;
+      bottom: auto;
+      right: 20px;
+    }
+
+    .arrow-button>.arrow {
+      width: 6px;
+      height: 6px;
+      border-right: 2px solid #42455a;
+      border-bottom: 2px solid #42455a;
+      position: relative;
+      transform: rotate(-45deg);
+      margin: 0 6px;
+      transition: all .3s ease;
+    }
+
+    .arrow-button>.arrow::before {
+      display: block;
+      background-color: currentColor;
+      width: 3px;
+      transform-origin: bottom right;
+      height: 2px;
+      position: absolute;
+      opacity: 0;
+      bottom: calc(-2px / 2);
+      transform: rotate(45deg);
+      transition: all .2s ease;
+      content: "";
+      right: 0;
+    }
+
+    .arrow-button:hover>.arrow {
+      transform: rotate(-45deg) translate(4px, 4px);
+      border-color: text-hover-color;
+      border-right: 2px solid #D77A61;
+      border-bottom: 2px solid #D77A61;
+    }
+
+    .arrow-button:hover>.arrow::before {
+      opacity: 1;
+      width: 8px;
+    }
+
+    .arrow-button:hover {
+      background-color: #42455a;
+      color: #D77A61;
+    }
+
+    #div1 {
+      display: flex;
+      flex-direction: column;
+    }
+
+    #div2 {
+      display: none;
+      flex-direction: column;
+      max-width: 300px;
+    }
   </style>
+
 
 </head>
 
 <body>
 
   <section class='login'>
-    <div id="div1">
-      <div class='head'>
-        <img src="bilder/fakebook.png" width="200px" alt="">
-      </div>
-      <p class='msg'>Velkommen tilbake</p>
-      <div class='form'>
-        <form>
-          <input type="text" placeholder='Falsk brukernavn' class='text' name='username' required><br>
-          <input type="password" placeholder='Falsk passord' class='password'><br>
-          <button class='btn-login'>Logg inn</button>
-        </form>
-      </div>
+
+    <div class='head'>
+      <img src="bilder/fakebook.png" width="200px" alt="">
     </div>
+
+    <div id="div1">
+      <p class='msg'>Velkommen tilbake</p>
+      <input type="text" id="username" placeholder="Brukernavn">
+      <input type="password" id="password" placeholder="Passord">
+      <input type="button" id="button" value="Logg inn" onclick="myFunction()">
+    </div>
+
     <div id="div2">
+      <h4>Det er veldig lett for andre å stjele informasjonen din på nett</h4>
+      <p>derfor er det veldig viktig at du passer på hvor du oppgir din personlige informasjon</p>
+      <p id="usernamedisplay"></p>
+      <input type="button" id="button" value="Gå tilbake til innloggingen" onclick="myFunction()">
+      <a href="personvern.html"><button class="arrow-button">Utforsk mer<span class="arrow"></span></button></a>
+
 
     </div>
   </section>
+
+
+  <script>
+    const username = document.getElementById('username')
+    const button = document.getElementById('button')
+    const usernamedisplay = document.getElementById('usernamedisplay')
+
+
+    function boks() {
+      usernamedisplay.innerHTML = username.value;
+    }
+
+    button.addEventListener('click', boks)
+
+    var x = document.getElementById("div1");
+    var y = document.getElementById("div2");
+
+    function myFunction() {
+      if (x.style.display === "none") {
+        x.style.display = "flex";
+        y.style.display = "none";
+      } else {
+        x.style.display = "none";
+        y.style.display = "flex";
+      }
+    }
+  </script>
+
 </body>
 
 </html>
