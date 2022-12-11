@@ -5,17 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>gurry</title>
+    <style>
+        #div2{  
+            display: none;
+        }
+    </style>
 </head>
 <body>
 
 <!--inspirert av https://www.youtube.com/watch?v=aEj0Wu33hJM-->
 <input type="text" id="username" placeholder="bap">
+<input type="button" id="button" value="trykk" onclick="myFunction()">
 
-<input type="button" id="button" value="trykk">
+
+
+<div id="div1">
+    This is my DIV element.
+    
+    
 
 <p>tell me a fact</p>
 <p id="usernamedisplay"></p>
+</div>
+
+<div id="div2">
+    <p>div2</p>
     
+</div>
     <script>
         const username = document.getElementById('username')
         const button = document.getElementById('button')
@@ -27,6 +43,19 @@
         }
 
         button.addEventListener('click', boks)
+
+        var x = document.getElementById("div1");
+        var y = document.getElementById("div2");
+
+        function myFunction() {
+            if (x.style.display === "none") {
+            x.style.display = "block";
+            y.style.display = "none";
+            } else {
+            x.style.display = "none";
+            y.style.display = "block";
+            }
+        }
     </script>
 </body>
 </html>
