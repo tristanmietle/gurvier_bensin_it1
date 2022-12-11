@@ -6,7 +6,7 @@
 }
 
 body {
-    background: #42455a;
+    background-color: #42455a;
 }
 
 .sticky{
@@ -39,7 +39,7 @@ body {
     display: block;
     text-decoration: none;
     padding: 1rem;
-    background-color: #D77A61;
+    background-color: #E4A796;
     color: #42455a;
     width: 100%;
     text-align: center;
@@ -51,27 +51,28 @@ body {
 .sticky a:hover{
     transition: 0.3s;
     background-color: #42455a;
-    color: #D77A61;
-    border-bottom: #D77A61 solid 2px;
+    color: #E4A796;
+    border-bottom: #E4A796 solid 2px;
 }
 
 .aktiv a{
     background-color: #42455a;
-    color: #D77A61;
-    border-bottom: #D77A61 solid 2px;
+    color: #E4A796;
+    border-bottom: #E4A796 solid 2px;
 }
 
 #frontpg{
-    background-image: url('bilder/fb-privacy.png');
+    background-image: url('bilder/fb-privacy.jpg');
     background-size: cover;
     background-position: center;
 }
+
 /*Inspirasjon fra https://csslab.app/buttons/arrow-button*/
 /*Pil start*/
 .arrow-button {
     display: flex;
     color: #42455a;
-    background-color: #D77A61;
+    background-color: #E4A796;
     padding: 10px 16px;
     border-radius: 20px;
     transition: all .3s ease;
@@ -79,8 +80,7 @@ body {
     cursor: pointer;
     align-items: center;
     font-size: 14px;
-    position: absolute;
-    bottom: auto;
+    position: absolute; /*Plassering*/
     right: 20px;
 }
 
@@ -105,7 +105,7 @@ body {
     opacity: 0;
     bottom: calc(-2px / 2);
     transform: rotate(45deg);
-    transition: all .2s ease;
+    transition: all .05s ease;
     content: "";
     right: 0;
 }
@@ -113,8 +113,8 @@ body {
 .arrow-button:hover > .arrow {
     transform: rotate(-45deg) translate(4px, 4px);
     border-color: text-hover-color;
-    border-right: 2px solid #D77A61;
-    border-bottom: 2px solid #D77A61;
+    border-right: 2px solid #E4A796;
+    border-bottom: 2px solid #E4A796;
 }
 
 .arrow-button:hover > .arrow::before {
@@ -124,6 +124,6 @@ body {
 
 .arrow-button:hover {
     background-color: #42455a;
-    color: #D77A61;
+    color: #E4A796;
 }
 /*Pil slutt*/
