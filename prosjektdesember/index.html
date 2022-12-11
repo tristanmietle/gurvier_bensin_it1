@@ -11,96 +11,114 @@
 </head>
 <style>
     /*Start på scroll-effekt*/
-/*Inspirasjon fra: https://alvarotrigo.com/blog/css-animations-scroll/ */
+    /*Inspirasjon fra: https://alvarotrigo.com/blog/css-animations-scroll/ */
 
-section {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    section {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-section .container {
-    margin: 100px;
-}
+    section .container {
+        margin: 100px;
+    }
 
-#frontpg h1 {
-    font-size: 3rem;
-    margin: 20px;
-    color: #42455a; /*setter farge på hovedoverskrift*/
-}
+    #frontpg h1 {
+        font-size: 3rem;
+        margin: 20px;
+        color: #42455a;
+        /*setter farge på hovedoverskrift*/
+        padding: 20px;
+        background-color: white;
+        opacity: 0.9;
+        border-radius: 15px;
+        box-shadow: inset 0 0 5px black;
+    }
 
-section h2 {
-    font-size: 40px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #E0FFFF; /*setter farge på overskrift*/
-}
-
-section .text-container {
-    display: flex;
-    color: #42455a; /*setter farge på tekst*/
-}
-
-section .text-container .text-box {
-    margin: 20px;
-    padding: 20px;
-    background: #E4A796;
-    flex: 1;
-    max-width: 500px; /*Setter max bredde på boksene*/
-}
-
-.text-box {
-    border-radius: 20px;
-}
-
-.text-box p {
-    font-style: italic;
-}
-
-@media (max-width: 800px) {
-section h1 {
-        font-size: 2rem;
+    section h2 {
+        font-size: 40px;
         text-align: center;
+        text-transform: uppercase;
+        color: #E0FFFF;
+        /*setter farge på overskrift*/
+        text-shadow: 0 0 5px black;
     }
 
     section .text-container {
-        flex-direction: column;
+        display: flex;
+        color: #42455a;
+        /*setter farge på tekst*/
     }
-}
 
-.reveal {
-    position: relative;
-    transform: translateY(150px);
-    opacity: 0;
-    transition: 0.75s all ease;
-}
+    section .text-container .text-box {
+        margin: 20px;
+        padding: 20px;
+        background: #E4A796;
+        flex: 1;
+        max-width: 500px;
+        /*Setter max bredde på boksene*/
+    }
 
-.reveal.active {
-    transform: translateY(0);
-    opacity: 1;
-}
+    .text-box {
+        border-radius: 20px;
+        box-shadow: 0 0 15px black;
+    }
 
-/*Slutt på scroll-effekt*/ 
+    .text-box p {
+        font-style: italic;
+    }
 
-/*Navnene til skaperne*/
-#frontpg h3{
-    position: absolute;
-    top: 92%;
-    color: #42455a; /*Farge på navn*/
-}
+    @media (max-width: 800px) {
+        section h1 {
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        section .text-container {
+            flex-direction: column;
+        }
+    }
+
+    .reveal {
+        position: relative;
+        transform: translateY(150px);
+        opacity: 0;
+        transition: 0.75s all ease;
+    }
+
+    .reveal.active {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    /*Slutt på scroll-effekt*/
+
+    /*Navnene til skaperne*/
+    #frontpg h3 {
+        position: absolute;
+        top: 92%;
+        color: #42455a;
+        /*Farge på navn*/
+    }
+
+    p b a{
+        text-decoration: none;
+        color: grey;
+    }
+
 </style>
 
 <body>
-    
-        <nav class="sticky">
-            <ul>
-                <li class="aktiv"><a href="index.html">Problemstilling</a></li>
-                <li><a href="personvern.html">Personvern</a></li>
-                <li><a href="sosialemedier.html">Sosiale&nbspMedier</a></li>
-                <li><a href="facebook.html">Facebook</a></li>
-            </ul>
-        </nav>
+
+    <nav class="sticky">
+        <ul>
+            <li class="aktiv"><a href="index.html">Problemstilling</a></li>
+            <li><a href="personvern.html">Personvern</a></li>
+            <li><a href="sosialemedier.html">Sosiale&nbspMedier</a></li>
+            <li><a href="facebook.html">Facebook</a></li>
+        </ul>
+    </nav>
 
     <section id="frontpg">
         <h1>Facebooks datainnsamling</h1>
@@ -108,23 +126,25 @@ section h1 {
     </section>
     <section>
         <div class="container reveal">
-            <h2>Quotes</h2>
+            <h2>Sitater</h2>
             <div class="text-container">
                 <div class="text-box">
                     <p>533 million Facebook users' phone numbers and personal data have been leaked online</p>
-                    <p><b>- Business Insider</b></p>
-                    <!--https://www.businessinsider.com/stolen-data-of-533-million-facebook-users-leaked-online-2021-4?r=US&IR=T-->
+                    <p><b><a href="https://www.businessinsider.com/stolen-data-of-533-million-facebook-users-leaked-online-2021-4?r=US&IR=T-">- Business Insider</a></b></p>
                 </div>
                 <div class="text-box">
-                    <p>Facebook and Instagram gathering browsing data from under-18s</p> 
-                    <p><b>- The Guardian</b></p>       
+                    <p>Facebook and Instagram gathering browsing data from under-18s</p>
+                    <p><b><a href="https://www.businessinsider.com/stolen-data-of-533-million-facebook-users-leaked-online-2021-4?r=US&IR=T-">- The Guardian</a></b></p>
+                </div>
+                <div class="text-box">
+                    <p>Users having their personal information leaked is a huge breach of trust and should be handled accordingly.</p>
+                    <p><b><a href="https://www.businessinsider.com/stolen-data-of-533-million-facebook-users-leaked-online-2021-4?r=US&IR=T-">- Business Insider</a></b></p>
                     <a href="logg-inn.html"><button class="arrow-button">Utforsk mer<span class="arrow"></span></button></a>
-                    <!--https://www.theguardian.com/technology/2021/nov/16/facebook-and-instagram-gathering-browsing-data-from-under-18s-study-says-->
-                </div> 
+                </div>
             </div>
-        </section>
+    </section>
 
-       
+
 </body>
 
 

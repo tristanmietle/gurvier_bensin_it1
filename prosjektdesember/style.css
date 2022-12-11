@@ -2,11 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-    background-color: #42455a;
+    background-color: #575c7c;
 }
 
 .sticky{
@@ -26,7 +26,7 @@ body {
 .main {
     font-size: 1.1em;
     font-weight: 380;
-    line-height: 1.45;
+    line-height: 1.65;
     letter-spacing: .005em;
 }
 
