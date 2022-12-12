@@ -10,12 +10,13 @@
 body {
     background-color: #575c7c;
 }
-
+/*
 .sticky{
     position: -webkit-sticky;
     position: sticky;
     top: 0;
 }
+*/
 
 .sticky ul{
     display: flex;
@@ -25,6 +26,11 @@ body {
     
 }
 
+.sticky li{
+    flex-grow: 1;
+    flex-basis: auto;
+}
+
 .main {
     font-size: 1.1em;
     font-weight: 380;
@@ -32,10 +38,6 @@ body {
     letter-spacing: .005em;
 }
 
-.sticky li{
-    flex-grow: 1;
-    flex-basis: auto;
-}
 
 .sticky a{
     display: block;
