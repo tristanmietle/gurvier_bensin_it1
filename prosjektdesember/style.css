@@ -10,15 +10,9 @@
 body {
     background-color: #575c7c;
 }
-/*
-.sticky{
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-}
-*/
 
-nav ul{
+/*Navbar*/
+.navbar ul{
     display: flex;
     margin: 0;
     padding: 0;
@@ -26,12 +20,12 @@ nav ul{
     
 }
 
-nav li{
+.navbar li{
     flex-grow: 1;
     flex-basis: auto;
 }
 
-nav a{
+.navbar a{
     display: block;
     text-decoration: none;
     padding: 1rem;
@@ -43,6 +37,22 @@ nav a{
     border-bottom: #42455a solid 2px;
 }
 
+.navbar a:hover {
+    transition: 0.2s;
+    background-color: #42455a;
+    color: #E4A796;
+    border-bottom: #E4A796 solid 2px;
+}
+
+.aktiv a{
+    background-color: #42455a;
+    color: #E4A796;
+    border-bottom: #E4A796 solid 2px;
+}
+
+/*Slutt*/
+
+/*Grid CSS*/
 .main {
     font-size: 1.1em;
     font-weight: 380;
@@ -56,18 +66,8 @@ nav a{
     color: #E4A796;
     border-bottom: #E4A796 solid 2px;
 }
+/*Slutt*/
 
-.aktiv a{
-    background-color: #42455a;
-    color: #E4A796;
-    border-bottom: #E4A796 solid 2px;
-}
-
-#frontpg{
-    background-image: url('bilder/fb-privacy.jpg');
-    background-size: cover;
-    background-position: center;
-}
 
 /*Inspirasjon fra https://csslab.app/buttons/arrow-button*/
 /*Pil start*/
