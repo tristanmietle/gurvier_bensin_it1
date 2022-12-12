@@ -118,7 +118,7 @@
     }
 </style>
 
-<body>
+<body onload="typeWriter()">
 
     <nav class="navbar">
         <ul>
@@ -130,8 +130,8 @@
     </nav>
 
     <section id="frontpg">
-        <h1>Facebooks datainnsamling</h1>
-        <h3>Tristan Mietle &#183 Gurveer Singh</h3>
+        <h1 id="type1"></h1>
+        <h3 id="type2">Tristan Mietle &#183 Gurveer Singh</h3>
     </section>
     <section>
         <div class="container reveal">
@@ -161,8 +161,22 @@
 
 
     <script>
-        /* Inspirasjon fra: https://alvarotrigo.com/blog/css-animations-scroll/ */
+        /*hentet fra https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_typewriter*/
+        var i = 0;
+        var txt = 'Facebooks datainnsamling';
+        var speed = 100;
 
+        function typeWriter() {
+            if (i < txt.length) {
+                document.getElementById("type1").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+
+        
+
+        /* Inspirasjon fra: https://alvarotrigo.com/blog/css-animations-scroll/ */
         function reveal() {
             var reveals = document.querySelectorAll(".reveal");
 
