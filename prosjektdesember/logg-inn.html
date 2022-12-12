@@ -14,12 +14,10 @@
 
     .login {
       color: white;
-      background: #d77a61;
+      background: #e4a796;
       margin: auto;
       box-shadow:
-        0px 2px 10px rgba(0, 0, 0, 0.2),
-        0px 10px 20px rgba(0, 0, 0, 0.3),
-        0px 30px 60px 1px rgba(0, 0, 0, 0.5);
+        0 0 15px black;
       border-radius: 8px;
       padding: 50px;
     }
@@ -84,7 +82,7 @@
     .arrow-button {
       display: flex;
       color: #42455a;
-      background-color: #D77A61;
+      background-color: #e4a796;
       padding: 10px 16px;
       border-radius: 20px;
       transition: all .3s ease;
@@ -126,8 +124,8 @@
     .arrow-button:hover>.arrow {
       transform: rotate(-45deg) translate(4px, 4px);
       border-color: text-hover-color;
-      border-right: 2px solid #D77A61;
-      border-bottom: 2px solid #D77A61;
+      border-right: 2px solid #e4a796;
+      border-bottom: 2px solid #e4a796;
     }
 
     .arrow-button:hover>.arrow::before {
@@ -137,7 +135,7 @@
 
     .arrow-button:hover {
       background-color: #42455a;
-      color: #D77A61;
+      color: #e4a796;
     }
 
     #div1 {
@@ -165,7 +163,7 @@
 
     <div id="div1">
       <p class='msg'>Velkommen tilbake</p>
-      <input type="text" id="username" placeholder="Brukernavn">
+      <input type="text" id="username" placeholder="Brukernavn" required>
       <input type="password" id="password" placeholder="Passord">
       <input type="button" id="button" value="Logg inn" onclick="myFunction()">
     </div>
