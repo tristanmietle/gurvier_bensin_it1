@@ -17,7 +17,6 @@ body {
     margin: 0;
     padding: 0;
     list-style: none;
-    
 }
 
 .navbar li{
@@ -29,6 +28,7 @@ body {
     display: block;
     text-decoration: none;
     padding: 1rem;
+    font-size: 1em;
     background-color: #E4A796;
     color: #42455a;
     width: 100%;
