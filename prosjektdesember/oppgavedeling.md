@@ -12,4 +12,4 @@ index: Begge
 logg-inn: Begge
 personvern: Gurveer
 sosialemedier: Tristan
-konklusjon: Begge
+Konklusjon: Begge
