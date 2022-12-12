@@ -18,7 +18,7 @@ body {
 }
 */
 
-.sticky ul{
+nav ul{
     display: flex;
     margin: 0;
     padding: 0;
@@ -26,20 +26,12 @@ body {
     
 }
 
-.sticky li{
+nav li{
     flex-grow: 1;
     flex-basis: auto;
 }
 
-.main {
-    font-size: 1.1em;
-    font-weight: 380;
-    line-height: 1.65;
-    letter-spacing: .005em;
-}
-
-
-.sticky a{
+nav a{
     display: block;
     text-decoration: none;
     padding: 1rem;
@@ -49,10 +41,16 @@ body {
     text-align: center;
     font-weight: 600;
     border-bottom: #42455a solid 2px;
-
 }
 
-.sticky a:hover{
+.main {
+    font-size: 1.1em;
+    font-weight: 380;
+    line-height: 1.65;
+    letter-spacing: .005em;
+}
+
+.main a:hover{
     transition: 0.3s;
     background-color: #42455a;
     color: #E4A796;
