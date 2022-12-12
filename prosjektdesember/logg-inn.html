@@ -158,7 +158,7 @@
   <section class='login'>
 
     <div class='head'>
-      <img src="bilder/fakebook.png" width="200px" alt="">
+      <img src="bilder/fakebook.png" width="200px" alt="Fakebook logo">
     </div>
 
     <div id="div1">
@@ -169,24 +169,31 @@
     </div>
 
     <div id="div2">
-      <h4>Det er veldig lett for andre å stjele informasjonen din på nett, <i id="usernamedisplay"></i></h4>
-      <p>Derfor er det veldig viktig at du passer på hvor du oppgir din personlige informasjon.</p>
-      <input type="button" id="button" value="Gå tilbake til innloggingen" onclick="myFunction()">
-      <a href="personvern.html"><button class="arrow-button">Personvern<span class="arrow"></span></button></a>
-
-
+      <h4>Det er veldig lett for andre å stjele informasjonen din på nett</h4>
+      <p>derfor er det veldig viktig at du passer på hvor du oppgir din personlige informasjon</p>
+      <div>
+        <h5>Brukernavn</h5>
+        <p id="usernamedisplay"></p>
+        <h5>Passord</h5>
+        <p id="passworddisplay"></p>
+        <input type="button" id="button" value="Gå tilbake til innloggingen" onclick="myFunction()">
+        <a href="personvern.html"><button class="arrow-button">Utforsk mer<span class="arrow"></span></button></a>
+      </div>
     </div>
   </section>
 
 
   <script>
     const username = document.getElementById('username')
+    const password = document.getElementById('password')
     const button = document.getElementById('button')
     const usernamedisplay = document.getElementById('usernamedisplay')
+    const passworddisplay = document.getElementById('passworddisplay')
 
 
     function boks() {
       usernamedisplay.innerHTML = username.value;
+      passworddisplay.innerHTML = password.value;
     }
 
     button.addEventListener('click', boks)
