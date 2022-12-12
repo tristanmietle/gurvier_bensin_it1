@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hovedside</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 </head>
 <style>
     /*Start på scroll-effekt*/
@@ -102,11 +101,10 @@
         /*Farge på navn*/
     }
 
-    p b a{
+    p b a {
         text-decoration: none;
         color: grey;
     }
-
 </style>
 
 <body>
@@ -130,20 +128,47 @@
             <div class="text-container">
                 <div class="text-box">
                     <p>533 million Facebook users' phone numbers and personal data have been leaked online</p>
-                    <p><b><a href="https://www.businessinsider.com/stolen-data-of-533-million-facebook-users-leaked-online-2021-4?r=US&IR=T-">- Business Insider</a></b></p>
+                    <p><b><a href="https://www.businessinsider.com/stolen-data-of-533-million-facebook-users-leaked-online-2021-4?r=US&IR=T-">-
+                                Business Insider</a></b></p>
                 </div>
                 <div class="text-box">
                     <p>Facebook and Instagram gathering browsing data from under-18s</p>
-                    <p><b><a href="https://www.businessinsider.com/stolen-data-of-533-million-facebook-users-leaked-online-2021-4?r=US&IR=T-">- The Guardian</a></b></p>
+                    <p><b><a href="https://www.businessinsider.com/stolen-data-of-533-million-facebook-users-leaked-online-2021-4?r=US&IR=T-">-
+                                The Guardian</a></b></p>
                 </div>
                 <div class="text-box">
-                    <p>Users having their personal information leaked is a huge breach of trust and should be handled accordingly.</p>
-                    <p><b><a href="https://www.businessinsider.com/stolen-data-of-533-million-facebook-users-leaked-online-2021-4?r=US&IR=T-">- Business Insider</a></b></p>
-                    <a href="logg-inn.html"><button class="arrow-button">Utforsk mer<span class="arrow"></span></button></a>
+                    <p>Users having their personal information leaked is a huge breach of trust and should be handled
+                        accordingly.</p>
+                    <p><b><a href="https://www.businessinsider.com/stolen-data-of-533-million-facebook-users-leaked-online-2021-4?r=US&IR=T-">-
+                                Business Insider</a></b></p>
+                    <a href="logg-inn.html"><button class="arrow-button">Utforsk mer<span
+                                class="arrow"></span></button></a>
                 </div>
             </div>
     </section>
 
+
+    <script>
+        /* Inspirasjon fra: https://alvarotrigo.com/blog/css-animations-scroll/ */
+
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                } else {
+                    reveals[i].classList.remove("active");
+                }
+            }
+        }
+
+        window.addEventListener("scroll", reveal);
+    </script>
 
 </body>
 
