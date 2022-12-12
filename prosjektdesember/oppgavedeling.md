@@ -6,6 +6,8 @@ jobbe:
 CSS-ansvalig: Gurveer Singh
 JavaScript i logg-inn dokument: Tristan
 
+Tekstinnhold
+
 index: Begge
 logg-inn: Begge
 personvern: Gurveer
