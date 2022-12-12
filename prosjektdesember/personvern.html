@@ -9,23 +9,45 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
-        * {
+        @media (max-width: 900px) {
+
+            .arrow-button {
+                position: static;
+            }
+
+            main {
+                text-align: left;
+                margin: 0 20px 20px 20px;
+            }
+
+
+            .grid {
+                display: grid;
+                grid-template-columns: repeat(12, 1fr);
+                grid-auto-rows: minmax(auto, auto);
+                grid-template-areas:
+                    "header header header header header header header header header header header header"
+                    "main main main main main main main main main main main main"
+            }
+        }
+
+        body {
             color: white;
         }
 
-        .header {
+        header {
             grid-area: header;
             margin-bottom: 20px;
             text-align: center;
             font-weight: 800;
         }
 
-        .header h1 {
+        header h1 {
             padding: 10px;
             text-shadow: #2e303a 2px 5px 2px;
         }
 
-        .main {
+        main {
             grid-area: main;
             padding: 20px;
             box-shadow: black 0 0 15px;
@@ -48,6 +70,10 @@
             font-style: bold;
         }
 
+        p {
+            margin: 15px 0;
+        }
+
         p a {
             color: #e4a796;
             text-decoration: none;
@@ -57,10 +83,6 @@
         p a:hover {
             border-bottom: #e4a796 solid 2px;
             transition: 0.2s;
-        }
-
-        p {
-            margin: 15px 0;
         }
 
         .arrow-button {
@@ -81,11 +103,6 @@
 
         /*Inspirasjon fra https://codepen.io/huange/pen/pJqEMj*/
         /*Start på collapsable*/
-        .wrapper {
-            margin: 20px;
-            width: 92%;
-        }
-
         ul {
             list-style: none;
             margin: 0;
@@ -106,19 +123,14 @@
         ul ol li {
             padding: 10px;
             background: #42455a;
-            color: #E0FFFF;
+            color: white;
         }
 
         ul ol {
             box-shadow: 0 0 5px black;
         }
 
-        #intro {
-            text-align: center;
-            font-size: 0.9em;
-            font-style: italic;
-        }
-
+        
         input[type="checkbox"] {
             display: none;
         }
@@ -139,6 +151,17 @@
             background: #42455a;
         }
 
+        .wrapper {
+            margin: 20px;
+            width: 92%;
+        }
+
+        #intro {
+            text-align: center;
+            font-size: 0.9em;
+            font-style: italic;
+        }
+
         #kilde {
             display: flex;
             justify-content: right;
@@ -150,7 +173,7 @@
 
         /* inspriasjon fra: https://stackoverflow.com/questions/14263594/how-to-show-text-on-image-when-hovering*/
         /*Start*/
-        .img__description {
+        #img__description {
             position: absolute;
             bottom: 0;
             left: 0;
@@ -172,35 +195,12 @@
 
         }
 
-        #text-over-pic:hover .img__description {
+        #text-over-pic:hover #img__description {
             visibility: visible;
             opacity: 0.85;
         }
 
         /*Slutt*/
-
-
-        @media (max-width: 900px) {
-
-            .arrow-button {
-                position: static;
-            }
-
-            .main {
-                text-align: left;
-                margin: 0 20px 20px 20px;
-            }
-
-
-            .grid {
-                display: grid;
-                grid-template-columns: repeat(12, 1fr);
-                grid-auto-rows: minmax(auto, auto);
-                grid-template-areas:
-                    "header header header header header header header header header header header header"
-                    "main main main main main main main main main main main main"
-            }
-        }
     </style>
 </head>
 
@@ -216,12 +216,12 @@
 
     <section class="grid">
 
-        <div class="header">
+        <header>
             <h1>Personvern</h1>
             <img src="bilder/personvern-bred-6.jpg" width="90%" alt="">
-        </div>
+        </header>
 
-        <div class="main">
+        <main>
             <p class="tittel">Hva er personvern?</p>
 
             <p>Personvern handler, ifølge <a
@@ -297,7 +297,7 @@
 
             <div id="text-over-pic">
                 <img src="bilder/Thon.jpg" alt="Bilde av Bjørn Erik Thon" width="100%">
-                <p class="img__description">Bilde av Bjørn Erik Thon, direktør ved Datatilsynet</p>
+                <p id="img__description">Bilde av Bjørn Erik Thon, direktør ved Datatilsynet</p>
             </div>
 
 
@@ -334,8 +334,8 @@
                 Facebook. De forklarer hvordan det er mye informasjon man ikke kan tenke seg som havner i hendene på
                 disse tilsynelatende uskyldige mediene</p>
 
-        </div>
-        </div>
+            </div>
+        </main>
 
     </section>
     <a href="sosialemedier.html"><button class="arrow-button">Sosiale medier<span class="arrow"></span></button></a>
