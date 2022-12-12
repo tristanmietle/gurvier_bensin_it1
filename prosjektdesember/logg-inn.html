@@ -91,6 +91,10 @@
       max-width: 250px;
       margin: 1em;
     }
+
+    p{
+      margin-bottom: 15px;
+    }
   </style>
 
 
@@ -106,19 +110,19 @@
 
     <div id="div1">
       <p id='msg'>Velkommen tilbake</p>
-      <input type="text" id="username" placeholder="Brukernavn" required>
-      <input type="password" id="password" placeholder="Passord">
+      <input type="text" id="username" placeholder="Falsk navn" required>
+      <input type="password" id="password" placeholder="Falsk passord">
       <input type="button" id="button" value="Logg inn" onclick="myFunction()">
     </div>
 
     <div id="div2">
-      <h4>Det er veldig lett for andre å stjele informasjonen din på nett</h4>
-      <p>derfor er det veldig viktig at du passer på hvor du oppgir din personlige informasjon</p>
+      <p><h4>Det er veldig lett for andre å stjele informasjonen din på nett, <b id="usernamedisplay"></b>. Alt fra
+        passordet ditt, <b id="passworddisplay"></b>, og annen informasjon kan havne i feil hender uten at du vet det.
+      </h4></p>
+
+      <p>Derfor er det veldig viktig at du passer på hvor du oppgir din personlige informasjon</p>
       <div>
-        <h5>Brukernavn</h5>
-        <p id="usernamedisplay"></p>
-        <h5>Passord</h5>
-        <p id="passworddisplay"></p>
+
         <input type="button" id="button" value="Gå tilbake til innloggingen" onclick="myFunction()">
       </div>
     </div>
