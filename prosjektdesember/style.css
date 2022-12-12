@@ -53,14 +53,14 @@ body {
 /*Slutt*/
 
 /*Grid CSS*/
-.main {
+main {
     font-size: 1.1em;
     font-weight: 380;
     line-height: 1.65;
     letter-spacing: .005em;
 }
 
-.main a:hover{
+main a:hover{
     transition: 0.3s;
     background-color: #42455a;
     color: #E4A796;
