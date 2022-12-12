@@ -82,8 +82,9 @@ body {
     cursor: pointer;
     align-items: center;
     font-size: 14px;
-    position: absolute; /*Plassering*/
-    right: 20px;
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
 }
 
 .arrow-button > .arrow {
@@ -127,5 +128,9 @@ body {
 .arrow-button:hover {
     background-color: #42455a;
     color: #E4A796;
+}
+
+.arrow-button {
+
 }
 /*Pil slutt*/
