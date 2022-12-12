@@ -11,28 +11,22 @@
 <style>
     /*Start på scroll-effekt*/
     /*Inspirasjon fra: https://alvarotrigo.com/blog/css-animations-scroll/ */
+    @media (max-width: 800px) {
+        section h1 {
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        section .text-container {
+            flex-direction: column;
+        }
+    }
 
     section {
         min-height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-
-    section .container {
-        margin: 100px;
-    }
-
-    #frontpg h1 {
-        font-size: 3rem;
-        margin: 20px;
-        color: #42455a;
-        /*setter farge på hovedoverskrift*/
-        padding: 20px;
-        background-color: white;
-        opacity: 0.9;
-        border-radius: 15px;
-        box-shadow: inset 0 0 5px black;
     }
 
     section h2 {
@@ -43,6 +37,11 @@
         /*setter farge på overskrift*/
         text-shadow: 0 0 5px black;
     }
+
+    section .container {
+        margin: 100px;
+    }
+
 
     section .text-container {
         display: flex;
@@ -68,15 +67,14 @@
         font-style: italic;
     }
 
-    @media (max-width: 800px) {
-        section h1 {
-            font-size: 2rem;
-            text-align: center;
-        }
+    .text-box a {
+        text-decoration: none;
+        color: grey;
+    }
 
-        section .text-container {
-            flex-direction: column;
-        }
+    .text-box a:hover {
+        color: black;
+        transition: 0.2s;
     }
 
     .reveal {
@@ -93,28 +91,30 @@
 
     /*Slutt på scroll-effekt*/
 
+    #frontpg {
+        background-image: url('bilder/fb-privacy.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    #frontpg h1 {
+        font-size: 3rem;
+        margin: 20px;
+        color: #42455a;
+        /*setter farge på hovedoverskrift*/
+        padding: 20px;
+        background-color: white;
+        opacity: 0.9;
+        border-radius: 15px;
+        box-shadow: inset 0 0 5px black;
+    }
+
     /*Navnene til skaperne*/
     #frontpg h3 {
         position: absolute;
         top: 92%;
         color: #42455a;
         /*Farge på navn*/
-    }
-
-    #frontpg{
-    background-image: url('bilder/fb-privacy.jpg');
-    background-size: cover;
-    background-position: center;
-}
-
-    .text-box a {
-        text-decoration: none;
-        color: grey;
-    }
-
-    .text-box a:hover{
-        color: black;
-        transition: 0.2s;
     }
 </style>
 
@@ -125,7 +125,7 @@
             <li class="aktiv"><a href="index.html">Problemstilling</a></li>
             <li><a href="personvern.html">Personvern</a></li>
             <li><a href="sosialemedier.html">Sosiale&nbspMedier</a></li>
-            <li><a href="konklusjon.html">konklusjon</a></li>
+            <li><a href="konklusjon.html">Konklusjon</a></li>
         </ul>
     </nav>
 
@@ -144,7 +144,7 @@
                 </div>
                 <div class="text-box">
                     <p>Facebook and Instagram gathering browsing data from under-18s</p>
-                    <p><b><a href="https://www.businessinsider.com/stolen-data-of-533-million-facebook-users-leaked-online-2021-4?r=US&IR=T-">-
+                    <p><b><a href="https://www.theguardian.com/technology/2021/nov/16/facebook-and-instagram-gathering-browsing-data-from-under-18s-study-says">-
                                 The Guardian</a></b></p>
                 </div>
                 <div class="text-box">
@@ -152,11 +152,12 @@
                         accordingly.</p>
                     <p><b><a href="https://www.businessinsider.com/stolen-data-of-533-million-facebook-users-leaked-online-2021-4?r=US&IR=T-">-
                                 Business Insider</a></b></p>
-                    <a href="logg-inn.html"><button class="arrow-button">Utforsk mer<span
-                                class="arrow"></span></button></a>
                 </div>
             </div>
     </section>
+
+
+    <a href="logg-inn.html"><button class="arrow-button">Utforsk mer<span class="arrow"></span></button></a>
 
 
     <script>
