@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,44 +8,168 @@
     <title>Facebook</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <nav class="navbar">
-        <ul>
-            <li><a href="index.html">Problemstilling</a></li>
-            <li><a href="personvern.html">Personvern</a></li>
-            <li><a href="sosialemedier.html">Sosiale&nbspMedier</a></li>
-            <li class="aktiv"><a href="konklusjon.html">Konklusjon</a></li>
-        </ul>
-    </nav>
+    <style>
+        body {
+            color: white;
+        }
 
-    <div class="tomh">     
-        <!-- TradingView Widget BEGIN -->
-            <div class="tradingview-widget-container">
-                <div id="tradingview_e4c59"></div>
-                <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/NASDAQ-META/" rel="noopener" target="_blank"><span class="white-text">META Chart</span></a> by TradingView</div>
-                <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
-                <script type="text/javascript">
-                new TradingView.widget(
-                {
-                "width": "500px",
-                "height": "200px",
-                "symbol": "NASDAQ:META",
-                "interval": "W",
-                "timezone": "Europe/Oslo",
-                "theme": "light",
-                "style": "2",
-                "locale": "en",
-                "toolbar_bg": "#f1f3f6",
-                "enable_publishing": false,
-                "hide_top_toolbar": true,
-                "allow_symbol_change": true,
-                "container_id": "tradingview_e4c59"
-              }
-                );
-                </script>
-              </div>
-              <!-- TradingView Widget END --></div>
+        header {
+            grid-area: header;
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: 800;
+        }
 
-              <a href="index.html"><button class="arrow-button">Tilbake til start<span class="arrow"></span></button></a>
-</body>
+        header h1 {
+            padding: 10px;
+            text-shadow: #2e303a 2px 5px 2px;
+        }
+
+        main {
+            grid-area: main;
+            padding: 20px;
+            box-shadow: black 0 0 15px;
+            background-color: #42455a;
+            border-radius: 10px;
+        }
+
+        .tomv {
+            grid-area: tomv;
+        }
+
+        .tomh {
+            grid-area: tomh;
+        }
+
+        .tittel {
+            grid-area: tittel;
+            font-size: 1.2em;
+            font-weight: 400;
+            font-style: bold;
+        }
+
+        p {
+            margin: 15px 0;
+        }
+
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-auto-rows: minmax(auto, auto);
+            grid-template-areas:
+                "header header header header header header header header header header header header"
+                "tomv tomv tomv main main main main main main tomh tomh tomh"
+        }
+
+        /* inspriasjon fra: https://stackoverflow.com/questions/14263594/how-to-show-text-on-image-when-hovering*/
+        /*Start*/
+        #img__description {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #42455a;
+            color: #fff;
+            visibility: hidden;
+            opacity: 0;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-style: italic;
+            transition: opacity .3s, visibility .3s;
+        }
+
+        #text-over-pic {
+            position: relative;
+
+        }
+
+        #text-over-pic:hover #img__description {
+            visibility: visible;
+            opacity: 0.85;
+        }
+
+        /*Slutt*/
+
+        @media (max-width: 900px) {
+
+            .arrow-button {
+                position: static;
+            }
+
+            main {
+                text-align: left;
+                margin: 0 20px 20px 20px;
+            }
+
+
+            .grid {
+                display: grid;
+                grid-template-columns: repeat(12, 1fr);
+                grid-auto-rows: minmax(auto, auto);
+                grid-template-areas:
+                    "header header header header header header header header header header header header"
+                    "main main main main main main main main main main main main"
+            }
+        }
+    </style>
+    </head>
+
+    <body>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Problemstilling</a></li>
+                <li><a href="personvern.html">Personvern</a></li>
+                <li><a href="sosialemedier.html">Sosiale&nbspMedier</a></li>
+                <li class="aktiv"><a href="konklusjon.html">Konklusjon</a></li>
+            </ul>
+        </nav>
+
+        <section class="grid">
+
+            <header>
+                <h1>Konklusjon</h1>
+                                <!-- TradingView Widget BEGIN -->
+                                <div class="tradingview-widget-container">
+                                    <div id="tradingview_e4c59"></div>
+                                    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/NASDAQ-META/"
+                                            rel="noopener" target="_blank"><span class="white-text">META Chart</span></a> by TradingView
+                                    </div>
+                                    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                                    <script type="text/javascript">
+                                        new TradingView.widget(
+                                            {
+                                                "width": "100%",
+                                                "symbol": "NASDAQ:META",
+                                                "interval": "W",
+                                                "timezone": "Europe/Oslo",
+                                                "theme": "light",
+                                                "style": "2",
+                                                "locale": "en",
+                                                "toolbar_bg": "#f1f3f6",
+                                                "enable_publishing": false,
+                                                "hide_top_toolbar": true,
+                                                "allow_symbol_change": true,
+                                                "container_id": "tradingview_e4c59"
+                                            }
+                                        );
+                                    </script>
+                
+                                    <!-- TradingView Widget END -->
+            </header>
+
+            <main>
+
+                </div>
+            </main>
+
+        </section>
+        <a href="index.html"><button class="arrow-button">Tilbake til start<span class="arrow"></span></button></a>
+    </body>
+
 </html>

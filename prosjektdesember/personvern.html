@@ -9,28 +9,6 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
-        @media (max-width: 900px) {
-
-            .arrow-button {
-                position: static;
-            }
-
-            main {
-                text-align: left;
-                margin: 0 20px 20px 20px;
-            }
-
-
-            .grid {
-                display: grid;
-                grid-template-columns: repeat(12, 1fr);
-                grid-auto-rows: minmax(auto, auto);
-                grid-template-areas:
-                    "header header header header header header header header header header header header"
-                    "main main main main main main main main main main main main"
-            }
-        }
-
         body {
             color: white;
         }
@@ -123,7 +101,7 @@
             box-shadow: 0 0 5px black;
         }
 
-        
+
         input[type="checkbox"] {
             display: none;
         }
@@ -194,6 +172,28 @@
         }
 
         /*Slutt*/
+
+        @media (max-width: 900px) {
+
+            .arrow-button {
+                position: static;
+            }
+
+            main {
+                text-align: left;
+                margin: 0 20px 20px 20px;
+            }
+
+
+            .grid {
+                display: grid;
+                grid-template-columns: repeat(12, 1fr);
+                grid-auto-rows: minmax(auto, auto);
+                grid-template-areas:
+                    "header header header header header header header header header header header header"
+                    "main main main main main main main main main main main main"
+            }
+        }
     </style>
 </head>
 
@@ -230,8 +230,11 @@
                 vite og ha kontroll om hva som skjer med data som omhandler deg. Derfor skal brukere av datasystem hvem
                 som samler inn dataen, hvor lenge det skal lagres, hva det samles inn for og hva den brukes til.
             </p>
-
-            <img src="bilder/GDPR.jpeg" alt="Et bilde som representerer GDPR regelverket" width="100%">
+            
+            <div id="text-over-pic">
+                <img src="bilder/gdpr.jpeg" alt="Et bilde som representerer GDPR regelverket" width="100%">
+                <p id="img__description">GDPR regelverket representert i et bilde</p>
+            </div>
 
             <p>Hvor annet lovverk ikke er satt på plass for å regulere bruk av brukerdata, kommer personopplysningsloven
                 inn, ifølge <a href="https://kode.cappelendamm.no/" title="(Langslet et al. 2020, s. 358)">Kode 1</a>.
@@ -289,7 +292,7 @@
             </p>
 
             <div id="text-over-pic">
-                <img src="bilder/Thon.jpg" alt="Bilde av Bjørn Erik Thon" width="100%">
+                <img src="bilder/thon.jpg" alt="Bilde av Bjørn Erik Thon" width="100%">
                 <p id="img__description">Bilde av Bjørn Erik Thon, direktør ved Datatilsynet</p>
             </div>
 
@@ -306,6 +309,7 @@
 
             <p class="tittel">Hvordan påvirkes enkeltindivider?</p>
 
+
             <p>Problemet med treffer rammer desverre ikke bare virksomheter, men enkelt mennesker også. I det siste
                 tiåret har det vært flere databrudd hos Facebook, hvor skumle persondetaljer som telefonnummer, navn og
                 bosted lekker ut. Ifølge <a
@@ -315,17 +319,26 @@
                 til amnge av deres brukere, men fikk også hele brukermiljøet til å spekulere om hvor mye informasjon
                 facebook har om oss.</p>
 
-            <img src="bilder/fb-puppet.webp" alt="Facebook som leker med mennesker som fingerdukker" width="50%">
+                <div id="text-over-pic">
+                    <img src="bilder/dalle-puppet-facebook.jpg" alt="Facebook som leker med mennesker som fingerdukker" width="100%">
+                    <p id="img__description">Facebook og andre sosiale medier har forandret hverdagen til folk. (Deler av dette bilde var laget i OpenAI sin DallE 2, KI-bilde editor)</p>
+                </div>
 
-            <p>Dette er ikke bare skadelig for tilliten til brukerene, men åpner opp for spørsmålet om hvor mye
-                selskaper som Facebook vet om oss. Oppfinnner av the Center for Humane Technology, Tristan Harris, sa
-                under Netflix-dokumentaren, <a href="https://www.netflix.com/no/title/81254224">det sosiale
-                    dilemmaet</a>, <i>“Hvis du ikke betaler for produktet, så er du produktet”</i>. Han fortsetter
-                dette med å si at informasjonen om deg som bruker blir solgt til selskaper for å så skreddsy reklame som
-                passer deg best. Noen vil se på dette som positivt ettersom de finner ting de liker, men samtidig sier
-                det noe om det store bilde. Dokumentaren snakker også med andre eksperter og folk som har jobbet hos
-                Facebook. De forklarer hvordan det er mye informasjon man ikke kan tenke seg som havner i hendene på
-                disse tilsynelatende uskyldige mediene</p>
+
+                <p>Dette er ikke bare skadelig for tilliten til brukerene, men åpner opp for spørsmålet om hvor mye
+                    selskaper som Facebook vet om oss. Oppfinnner av the Center for Humane Technology, Tristan Harris,
+                    sa
+                    under Netflix-dokumentaren, <a href="https://www.netflix.com/no/title/81254224">det sosiale
+                        dilemmaet</a>, <i>“Hvis du ikke betaler for produktet, så er du produktet”</i>. Han fortsetter
+                    dette med å si at informasjonen om deg som bruker blir solgt til selskaper for å så skreddesy
+                    reklame som
+                    passer deg best. Noen vil se på dette som en fordel ettersom de finner ting de liker, men samtidig
+                    sier
+                    det noe om det store bilde og hensikt bak løsningen. Dokumentaren snakker også med andre eksperter
+                    og folk som har jobbet hos
+                    Facebook. De forklarer hvordan det er mye informasjon man ikke kan tenke seg som havner i hendene på
+                    disse tilsynelatende uskyldige mediene, og alt opp til hvor lengde du ser på et innlegg loggføres i
+                    deres databaser.</p>
 
             </div>
         </main>
