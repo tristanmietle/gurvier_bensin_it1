@@ -91,6 +91,7 @@
 
     /*Slutt på scroll-effekt*/
 
+    /*posisjon for første bilde*/
     #frontpg {
         background-image: url('bilder/fb-privacy.jpg');
         background-size: cover;
@@ -98,7 +99,7 @@
     }
 
     #frontpg h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
         margin: 20px;
         color: #42455a;
         /*setter farge på hovedoverskrift*/
@@ -114,7 +115,7 @@
         position: absolute;
         top: 92%;
         color: #42455a;
-        /*Farge på navn*/
+        /*Farge på navnene våre*/
     }
 </style>
 
@@ -163,8 +164,8 @@
     <script>
         /*hentet fra https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_typewriter*/
         var i = 0;
-        var txt = 'Facebooks datainnsamling';
-        var speed = 100;
+        var txt = 'Utfordringer med at Facebook som en privat bedrift har tilgang til brukenes private opplysninger.';
+        var speed = 75;
 
         function typeWriter() {
             if (i < txt.length) {
