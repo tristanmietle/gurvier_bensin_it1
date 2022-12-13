@@ -130,22 +130,21 @@
 
 
   <script>
-    const username = document.getElementById('username')
-    const password = document.getElementById('password')
-    const button = document.getElementById('button')
-    const usernamedisplay = document.getElementById('usernamedisplay')
-    const passworddisplay = document.getElementById('passworddisplay')
+    // hentet inspirasjon fra https://www.youtube.com/watch?v=aEj0Wu33hJM og https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
+    let username = document.getElementById('username')
+    let password = document.getElementById('password')
+    let usernamedisplay = document.getElementById('usernamedisplay')
+    let passworddisplay = document.getElementById('passworddisplay')
+    let button = document.getElementById('button')
+    let x = document.getElementById("div1");
+    let y = document.getElementById("div2");
 
+    button.addEventListener('click', boks)
 
     function boks() {
       usernamedisplay.innerHTML = username.value;
       passworddisplay.innerHTML = password.value;
     }
-
-    button.addEventListener('click', boks)
-
-    var x = document.getElementById("div1");
-    var y = document.getElementById("div2");
 
     function myFunction() {
       if (x.style.display === "none") {
