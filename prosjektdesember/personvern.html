@@ -25,12 +25,12 @@
             text-shadow: #2e303a 2px 5px 2px;
         }
 
-/*Setter margin, samt farge på a-elementene*/
+        /*Setter margin, samt farge på a-elementene*/
         p {
             margin: 15px 0;
         }
 
-        
+
         p a {
             color: #e4a796;
             text-decoration: none;
@@ -41,10 +41,12 @@
             border-bottom: #e4a796 solid 2px;
             transition: 0.2s;
         }
-/*Setter margin, samt farge på a-elementene slutt*/
 
-/*Grid template-elementer*/
-        main { /*Definerer hver av area-ene inni grid templaten*/
+        /*Setter margin, samt farge på a-elementene slutt*/
+
+        /*Grid template-elementer*/
+        main {
+            /*Definerer hver av area-ene inni grid templaten*/
             grid-area: main;
             padding: 20px;
             box-shadow: black 0 0 15px;
@@ -69,17 +71,20 @@
 
         .grid {
             display: grid;
-            grid-template-columns: repeat(12, 1fr); /*Setter 12 kolonner hvor en kolonne er 1 bit av 12*/
-            grid-auto-rows: minmax(auto, auto); /*Tilpasser rader automatisk*/
+            grid-template-columns: repeat(12, 1fr);
+            /*Setter 12 kolonner hvor en kolonne er 1 bit av 12*/
+            grid-auto-rows: minmax(auto, auto);
+            /*Tilpasser rader automatisk*/
             grid-template-areas:
                 "header header header header header header header header header header header header"
                 "tomv tomv tomv main main main main main main tomh tomh tomh"
         }
-/*Grid template-elementer slutt*/
+
+        /*Grid template-elementer slutt*/
 
 
         /*Inspirasjon fra https://codepen.io/huange/pen/pJqEMj*/
-/*Start på collapsable*/
+        /*Start på collapsable*/
         ul {
             list-style: none;
             margin: 0;
@@ -133,22 +138,24 @@
             width: 92%;
         }
 
-        #intro { /*Intro-tekst inne i collapsable*/
+        #intro {
+            /*Intro-tekst inne i collapsable*/
             text-align: center;
             font-size: 0.9em;
             font-style: italic;
         }
 
-        #kilde { /*Kilden inni collapsablen. Bruker flex for å plasere den*/
+        #kilde {
+            /*Kilden inni collapsablen. Bruker flex for å plasere den*/
             display: flex;
             justify-content: right;
             font-size: 0.75em;
             margin-right: 20px;
         }
 
-/*Slutt på collapsable*/
+        /*Slutt på collapsable*/
 
-/*Tilpasser for innholder som er mindre bred enn 800px ved hjelp av media query
+        /*Tilpasser for innholder som er mindre bred enn 800px ved hjelp av media query
 Forandrer grid*/
         @media (max-width: 800px) {
 
@@ -167,8 +174,8 @@ Forandrer grid*/
                     "main main main main main main main main main main main main"
             }
         }
-/*Slutt på media query*/
 
+        /*Slutt på media query*/
     </style>
 </head>
 
@@ -193,7 +200,8 @@ Forandrer grid*/
             <p class="tittel">Hva er personvern?</p>
 
             <p>Personvern handler, ifølge <a
-                    href="https://www.datatilsynet.no/rettigheter-og-plikter/hva-er-personvern/" title="(Datatilsynet, 2019)">Datatilsynets</a>
+                    href="https://www.datatilsynet.no/rettigheter-og-plikter/hva-er-personvern/"
+                    title="(Datatilsynet, 2019)">Datatilsynets</a>
                 nettsider, om retten til et privatliv og retten til å bestemme
                 over egne personopplysninger. Det kan derfor omhandle alt fra små detaljer om familien din, til større å
                 viktigere ting
@@ -228,7 +236,7 @@ Forandrer grid*/
                         </label>
 
                         <ol>
-                            <p id="intro"> <audio controls src="lyd/gdpr-tale.mp3"></audio> </p> 
+                            <p id="intro"> <audio controls src="lyd/gdpr-tale.mp3"></audio> </p>
                             <p id="intro">Det ble i 2018 lansert en ny lov med navnet personopplysningsloven i Norge.
                                 Denne loven er basert på nasjonale regler og EUs personvernforordning som kalles GDPR
                                 (General Data
@@ -259,7 +267,8 @@ Forandrer grid*/
             <p class="tittel">Hvordan påvirkes virksomhet?</p>
 
             <p>Direktør ved Datatilsynet, <a
-                    href="https://www.datatilsynet.no/aktuelt/aktuelle-nyheter-2021/datatilsynet-velger-a-ikke-bruke-facebook/" title="(Datatilsynet, 2021)">Bjørn
+                    href="https://www.datatilsynet.no/aktuelt/aktuelle-nyheter-2021/datatilsynet-velger-a-ikke-bruke-facebook/"
+                    title="(Datatilsynet, 2021)">Bjørn
                     Erik Thon</a>, mener virksomhetene ikke har god nok kontroll på dataen som sendes inn til
                 Facebooks-nettsider. Han sier <i>«De som ville besøkt Datatilsynets Facebook-side, ville forventet at vi
                     kunne svare på hva opplysningene om deg blir brukt til. Det vet vi ikke»</i>, og er kjernen til at
@@ -273,13 +282,15 @@ Forandrer grid*/
             </div>
 
 
-            <p>Et av hovedpunktene de i tillegg trekker fram er, ifølge <a
-                    href="https://www.kommunikasjon.no/fagstoff/nyheter/datatilsynet-dropper-facebook" title="(Mellum og Gudium, 2021)">kommunikasjonsforeningen</a>,
+            <p>Et av hovedpunktene Datatilsynet i tillegg trekker fram er, ifølge <a
+                    href="https://www.kommunikasjon.no/fagstoff/nyheter/datatilsynet-dropper-facebook"
+                    title="(Mellum og Gudium, 2021)">kommunikasjonsforeningen</a>,
                 at det ikke er mulig å
-                inngå en egen avtale med Facebook. Deres standardavtale måler seg ikke opp mot personvernforordningen,
+                inngå en egen avtale med Facebook. Deres standardavtale måler seg, ifølge Thon, ikke opp mot
+                personvernforordningen,
                 altså GDPR. Thon trekker seg så litt tilbake ved å si at det er en refleksjonsak og en vurdering alle
-                virksomheter må ta ettersom det ikke er ulovlig å ha en slik side på Facebook. Informasjon, funkjson
-                eller rolle virksomheten har på Facebook er alle ting man må ta med i vurderingen om man vil bli på
+                virksomheter må ta ettersom det ikke er ulovlig å ha en slik side på Facebook. Informasjon, funksjonen
+                eller rollen virksomheten har på Facebook er alle ting man må ta med i vurderingen om man vil bli på
                 plattformen eller ikke, samt om de har ressursene til å følge med de stadige endringene Facebook tar i
                 bruk. Han konkluderer intervjuet med å
                 si at han håper offentlige etater gjør en grundig vurdering i lys av denne nye rapporten.
@@ -292,7 +303,8 @@ Forandrer grid*/
             <p>Problemet rammer desverre ikke bare virksomheter, men enkelt mennesker også. I løpet av det siste
                 tiåret har det vært flere databrudd hos Facebook, hvor persondetaljer som telefonnummer, navn og
                 bosted lekker ut. Ifølge <a
-                    href="https://www.businessinsider.com/stolen-data-of-533-million-facebook-users-leaked-online-2021-4?r=US&IR=T" title="(Holmes, 2021)">Insider</a>,
+                    href="https://www.businessinsider.com/stolen-data-of-533-million-facebook-users-leaked-online-2021-4?r=US&IR=T"
+                    title="(Holmes, 2021)">Insider</a>,
                 ble over 530 millioner personer rammet av et slik angrep i 2021. Informasjonen var fra til sammen 106
                 land og lagt ut gratis på et lav rangert hacker-forum. Ikke bare mista Facebook tilliten
                 til mange av deres brukere, men de fikk også hele brukermiljøet til å spekulere om hvor mye informasjon
@@ -322,20 +334,30 @@ Forandrer grid*/
                 disse tilsynelatende uskyldige plattformene, og alt opp til hvor lengde du ser på et innlegg loggføres i
                 deres databaser. Kan vi ikke bare slette kontoene å være ferdig med det hele?</p>
 
-                <div id="text-over-pic">
-                    <img src="bilder/vilkaar-kunst.jpeg" alt="Kunst laget av lengden på vilkår og betingelsene til store selskaper som Facebook, hvor det står I agree på toppen" width="100%">
-                    <p id="img__description">Kunstverket representerer hvordan lang vilkår og betingelse tekst ofte bare blir møtt med 'aksepter alt' fra brukerens side</p>
-                </div>
+            <div id="text-over-pic">
+                <img src="bilder/vilkaar-kunst.jpeg"
+                    alt="Kunst laget av lengden på vilkår og betingelsene til store selskaper som Facebook, hvor det står I agree på toppen"
+                    width="100%">
+                <p id="img__description">Kunstverket representerer hvordan lang vilkår og betingelse tekst ofte bare
+                    blir møtt med 'aksepter alt' fra brukerens side</p>
+            </div>
 
 
-            <p>I en studie gjort i 2021 av Cybersecurity eksperter hos <a href="https://www.mirror.co.uk/tech/study-reveals-facebook-instagram-store-25188324" title="(Lynch, 2021)">VPN Overview </a>, viste det seg at Facebook var
+            <p>I en studie gjort i 2021 av Cybersecurity eksperter hos <a
+                    href="https://www.mirror.co.uk/tech/study-reveals-facebook-instagram-store-25188324"
+                    title="(Lynch, 2021)">VPN Overview </a>, viste det seg at Facebook var
                 verstingen når det gjaldt bevaring av data etter nedstenging av konto. All informasjon var bevart i 180
                 dager, mens annen data, uten brukerens navn på, lagres i deres databaser i enda lengre tid. De frykter
                 brukere ikke er bevist på at deres data blir håndtert på denne måten, og at om de hadde fått en klar
-                oversikt over dette ville endret deres mening. I en undersøkelse utført av <a href="https://eu.usatoday.com/story/tech/2020/01/28/not-reading-the-small-print-is-privacy-policy-fail/4565274002/">USA Today</a> i 2017, fant de ut
-                at 97% av mennesker mellom 18-34 år ikke leser vilkår og betingelser siden som kommer opp ved oppretting
-                av profiler. Selv om denne undersøkelsen bare var gjort på 2000 mennesker, vil tallene sannsynligvis
-                være mye høyere på Facebook sine sider, ettersom den består av over 14000 ord, ifølge <a href="https://www.huffingtonpost.co.uk/entry/facebook-terms-and-conditions-you-agreed-to-when-you-opened-an-account-what-do-they-mean_uk_5ab8b719e4b054d118e47db9">HuffigtonPost</a>.</p>
+                oversikt over dette ville endret deres mening. I en undersøkelse utført av <a
+                    href="https://eu.usatoday.com/story/tech/2020/01/28/not-reading-the-small-print-is-privacy-policy-fail/4565274002/"
+                    title="(Guynn, u.å.)">USA Today</a> i 2017, fant de ut
+                at 97% av mennesker mellom 18-34 år ikke leser vilkår og betingelsers-siden som kommer opp ved
+                oppretting
+                av nye profiler. Selv om denne undersøkelsen bare var gjort på 2000 mennesker, vil tallene sannsynligvis
+                være mye høyere på Facebook sine sider, ettersom den består av over 14000 ord, ifølge <a
+                    href="https://www.huffingtonpost.co.uk/entry/facebook-terms-and-conditions-you-agreed-to-when-you-opened-an-account-what-do-they-mean_uk_5ab8b719e4b054d118e47db9"
+                    title="(Gallagher og Thurlow, 2018)">HuffigtonPost</a>.</p>
             </div>
         </main>
 
