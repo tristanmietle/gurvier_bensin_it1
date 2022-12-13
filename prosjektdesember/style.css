@@ -73,7 +73,7 @@ main a:hover {
 
 /* inspriasjon fra: https://stackoverflow.com/questions/14263594/how-to-show-text-on-image-when-hovering*/
 /*Start på bildetekst*/
-#img__description {
+.img__description {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -90,11 +90,11 @@ main a:hover {
     transition: opacity .3s, visibility .3s;
 }
 
-#text-over-pic {
+.text-over-pic {
     position: relative;
 }
 
-#text-over-pic:hover #img__description {
+.text-over-pic:hover .img__description {
     visibility: visible;
     opacity: 0.85;
 }
