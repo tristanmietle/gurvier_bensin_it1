@@ -12,19 +12,19 @@ body {
 }
 
 /*Navbar*/
-.navbar ul{
+.navbar ul {
     display: flex;
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-.navbar li{
+.navbar li {
     flex-grow: 1;
     flex-basis: auto;
 }
 
-.navbar a{
+.navbar a {
     display: block;
     text-decoration: none;
     padding: 1rem;
@@ -44,7 +44,7 @@ body {
     border-bottom: #E4A796 solid 2px;
 }
 
-.aktiv a{
+.aktiv a {
     background-color: #42455a;
     color: #E4A796;
     border-bottom: #E4A796 solid 2px;
@@ -60,12 +60,44 @@ main {
     letter-spacing: .005em;
 }
 
-main a:hover{
+main a:hover {
     transition: 0.3s;
     background-color: #42455a;
     color: #E4A796;
     border-bottom: #E4A796 solid 2px;
 }
+
+/*Slutt*/
+
+
+/* inspriasjon fra: https://stackoverflow.com/questions/14263594/how-to-show-text-on-image-when-hovering*/
+/*Start*/
+#img__description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #42455a;
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    transition: opacity .3s, visibility .3s;
+}
+
+#text-over-pic {
+    position: relative;
+}
+
+#text-over-pic:hover #img__description {
+    visibility: visible;
+    opacity: 0.85;
+}
+
 /*Slutt*/
 
 
@@ -87,7 +119,7 @@ main a:hover{
     right: 2%;
 }
 
-.arrow-button > .arrow {
+.arrow-button>.arrow {
     width: 6px;
     height: 6px;
     border-right: 2px solid #42455a;
@@ -98,7 +130,7 @@ main a:hover{
     transition: all .3s ease;
 }
 
-.arrow-button > .arrow::before {
+.arrow-button>.arrow::before {
     display: block;
     background-color: currentColor;
     width: 3px;
@@ -113,14 +145,14 @@ main a:hover{
     right: 0;
 }
 
-.arrow-button:hover > .arrow {
+.arrow-button:hover>.arrow {
     transform: rotate(-45deg) translate(4px, 4px);
     border-color: text-hover-color;
     border-right: 2px solid #E4A796;
     border-bottom: 2px solid #E4A796;
 }
 
-.arrow-button:hover > .arrow::before {
+.arrow-button:hover>.arrow::before {
     opacity: 1;
     width: 8px;
 }
@@ -129,4 +161,5 @@ main a:hover{
     background-color: #42455a;
     color: #E4A796;
 }
+
 /*Pil slutt*/
