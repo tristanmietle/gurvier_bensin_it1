@@ -182,12 +182,12 @@
             transition: opacity .3s, visibility .3s;
         }
 
-        #text-over-pic {
+        .text-over-pic {
             position: relative;
 
         }
 
-        #text-over-pic:hover #img__description {
+        .text-over-pic:hover .img__description {
             visibility: visible;
             opacity: 0.85;
         }
@@ -209,34 +209,22 @@
 
         <header>
             <h1>Sosiale Medier</h1>
-            <img src="bilder/sosialemedier.jpg" height="90%" width="90%" alt="">
+            <img src="bilder/sosialemedier.jpg" height="90%" width="90%" alt="Forsidebilde">
         </header>
 
         <main>
             <p class="tittel">Hva er sosiale medier?</p>
 
-            <p>Personvern handler, ifølge <a
-                    href="https://www.datatilsynet.no/rettigheter-og-plikter/hva-er-personvern/">Datatilsynets</a>
-                nettsider, om retten til et privatliv og retten til å bestemme
-                over egne personopplysninger. Det kan derfor omhandle alt fra små detaljer om familien din, til større å
-                viktigere ting
-                som kan påvirke livet ditt om det blir snappet opp av feil folk. Derfor er det i Norge og et par andre
-                land et
-                sett med regler for å regulere hvor denne informasjonen kan havne. Ifølge, <a
-                    href="https://kode.cappelendamm.no/" title="(Langslet et al. 2020, s. 358)">Kode 1</a>, har du som
-                bruker retten til å velge,
-                vite og ha kontroll om hva som skjer med data som omhandler deg. Derfor skal brukere av datasystem hvem
-                som samler inn dataen, hvor lenge det skal lagres, hva det samles inn for og hva den brukes til.
+            <p>Sosiale medier er en samlebetegnelse for forskjellige apper og nettsider som brukes til bilde-, video- og tekstdeling mellom mennesker og organisasjoner. Sosiale medier har blitt en sentral del av den moderne popkulturen, og påvirker dagens samfunn i større grad enn det noensinne har gjort. Ifølge <a href="https://snl.no/sosiale_medier" title="(Enli, G. 2018)">SNL</a> er Facebook det vanligste sosiale mediet i Norge, tett etterfulgt av Twitter, Snapchat, Instagram (eid av Facebook/Meta) og YouTube. 
             </p>
+            <div id="text-over-pic">
+                <img src="bilder/typersosialemedier.jpg" alt="Et bilde av forskjellige sosiale medier" width="100%">
+                <p id="img__description">Bilde av noen av de mest populære sosiale mediene. </p>
+            </div>
+            
+            <p class="tittel">Hvordan har digital kommunikasjon har påvirket verden?</p>
 
-            <img src="bilder/GDPR.jpeg" alt="Et bilde som representerer GDPR regelverket" width="100%">
-
-            <p>Hvor annet lovverk ikke er satt på plass for å regulere bruk av brukerdata, kommer personopplysningsloven
-                inn, ifølge <a href="https://kode.cappelendamm.no/" title="(Langslet et al. 2020, s. 358)">Kode 1</a>.
-                Det vil si at helsesektoren ikke påvirkes av denne loven ettersom de har andre regelverk som
-                omhandler dette temaet. De temaene personopplysningsloven dekker er
-                rettighetene til enkeltindivider samt
-                virksomheter og bygges på sju prinsipper listet opp nede.</p>
+            <p>Digital kommunikasjon har endret verden. Tidligere var informasjonsflyten i stor grad styrt av medier og stater, men sosiale medier har revolusjonert kommunikasjonen mellom verdens innbyggere. Nå kan videoer, bilder og idéer deles fritt mellom enkeltindivider, uten noen form for sensur. Allikevel er det noen sosiale medier som har havnet i hardt vær, som for eksempel <a href="https://www.businessinsider.com/cambridge-analytica-whistleblower-christopher-wylie-facebook-data-2019-10?r=US&IR=T" title="(Chan, R. 2019)">Facebook</a>. Ifølge tidligere annsatte i selskapet Cambridge Analytica har Facebook samlet inn brukerdata for å sende målrettet, politisk reklame mot brukerne sine. Dette viser at plattformene som er brukt kan påvirke brukerne, og at digital kommunikasjon har sine ulemper.</p>
 
             <div class="wrapper">
                 <ul>
@@ -260,7 +248,7 @@
                 </ul>
             </div>
 
-            <p class="tittel">Hvordan påvirkes virksomhet?</p>
+            <p class="tittel">Hvilket moralsk ansvar har sosiale medier?</p>
 
             <p>Direktør ved Datatilsynet, <a
                     href="https://www.datatilsynet.no/aktuelt/aktuelle-nyheter-2021/datatilsynet-velger-a-ikke-bruke-facebook/">Bjørn
@@ -271,9 +259,9 @@
                 selv trakk seg fra nettsidene.
             </p>
 
-            <div id="text-over-pic">
+            <div class="text-over-pic">
                 <img src="bilder/Thon.jpg" alt="Bilde av Bjørn Erik Thon" width="100%">
-                <p id="img__description">Bilde av Bjørn Erik Thon, direktør ved Datatilsynet</p>
+                <p class="img__description">Bilde av Bjørn Erik Thon, direktør ved Datatilsynet</p>
             </div>
 
 
@@ -287,7 +275,7 @@
             </p>
 
 
-            <p class="tittel">Hvordan påvirkes enkeltindivider?</p>
+            <p class="tittel"></p>
 
             <p>Problemet med treffer rammer desverre ikke bare virksomheter, men enkelt mennesker også. I det siste
                 tiåret har det vært flere databrudd hos Facebook, hvor skumle persondetaljer som telefonnummer, navn og
