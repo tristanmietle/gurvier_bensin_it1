@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');/*Importerer font fra font.google.com*/
 
 * {
     margin: 0;
@@ -12,19 +12,19 @@ body {
 }
 
 /*Navbar*/
-.navbar ul {
+.navbar ul {/*Flex slik at vi kan gjøre navbar li*/
     display: flex;
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-.navbar li {
+.navbar li {/*varierer størrelse av navbaren*/
     flex-grow: 1;
     flex-basis: auto;
 }
 
-.navbar a {
+.navbar a {/*Dekor av navbar*/
     display: block;
     text-decoration: none;
     padding: 1rem;
@@ -37,14 +37,14 @@ body {
     border-bottom: #42455a solid 2px;
 }
 
-.navbar a:hover {
+.navbar a:hover {/*Endring i farge når du glir over a-elementet*/
     transition: 0.2s;
     background-color: #42455a;
     color: #E4A796;
     border-bottom: #E4A796 solid 2px;
 }
 
-.aktiv a {
+.aktiv a {/*Annen farge for valgte a-element/nettside*/
     background-color: #42455a;
     color: #E4A796;
     border-bottom: #E4A796 solid 2px;
@@ -53,11 +53,11 @@ body {
 /*Slutt*/
 
 /*Grid CSS*/
-main {
+main { /*Setter verdier på hvordan skriften skal være*/
     font-size: 1.1em;
     font-weight: 380;
     line-height: 1.65;
-    letter-spacing: .005em;
+    letter-spacing: 0.005em;
 }
 
 main a:hover {
