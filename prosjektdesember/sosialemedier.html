@@ -8,28 +8,6 @@
     <title>Sosiale Medier</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        @media (max-width: 900px) {
-
-            .arrow-button {
-                position: static;
-            }
-
-            main {
-                text-align: left;
-                margin: 0 10px 10px 10px;
-            }
-
-
-            .grid {
-                display: grid;
-                grid-template-columns: repeat(12, 1fr);
-                grid-auto-rows: minmax(auto, auto);
-                grid-template-areas:
-                    "header header header header header header header header header header header header"
-                    "main main main main main main main main main main main main"
-            }
-        }
-
         body {
             color: white;
         }
@@ -82,6 +60,10 @@
         p a:hover {
             border-bottom: #e4a796 solid 2px;
             transition: 0.2s;
+        }
+
+        img{
+            justify-content: center;
         }
 
         .grid {
@@ -165,7 +147,7 @@
 
         /* inspriasjon fra: https://stackoverflow.com/questions/14263594/how-to-show-text-on-image-when-hovering*/
         /*Start*/
-        #img__description {
+        .img__description {
             position: absolute;
             bottom: 0;
             left: 0;
@@ -193,6 +175,28 @@
         }
 
         /*Slutt*/
+
+        /*Tilpasser for innholder som er mindre bred enn 800px ved hjelp av media query
+        Forandrer grid*/
+        @media (max-width: 800px) {
+
+            main {
+                text-align: left;
+                margin: 0 10px 10px 10px;
+            }
+
+
+            .grid {
+                display: grid;
+                grid-template-columns: repeat(12, 1fr);
+                grid-auto-rows: minmax(auto, auto);
+                grid-template-areas:
+                    "header header header header header header header header header header header header"
+                    "main main main main main main main main main main main main"
+            }
+        }
+
+        /*Slutt på media query*/
     </style>
 </head>
 
@@ -209,22 +213,34 @@
 
         <header>
             <h1>Sosiale Medier</h1>
-            <img src="bilder/sosialemedier.jpg" height="90%" width="90%" alt="Forsidebilde">
+            <img src="bilder/sosialemedier.jpg" height="90%" width="100%" alt="Forsidebilde">
         </header>
 
         <main>
             <p class="tittel">Hva er sosiale medier?</p>
 
-            <p>Sosiale medier er en samlebetegnelse for forskjellige apper og nettsider som brukes til bilde-, video- og tekstdeling mellom mennesker og organisasjoner. Sosiale medier har blitt en sentral del av den moderne popkulturen, og påvirker dagens samfunn i større grad enn det noensinne har gjort. Ifølge <a href="https://snl.no/sosiale_medier" title="(Enli, G. 2018)">SNL</a> er Facebook det vanligste sosiale mediet i Norge, tett etterfulgt av Twitter, Snapchat, Instagram (eid av Facebook/Meta) og YouTube. 
+            <p>Sosiale medier er en samlebetegnelse for forskjellige apper og nettsider som brukes til bilde-, video- og
+                tekstdeling mellom mennesker og organisasjoner. Sosiale medier har blitt en sentral del av den moderne
+                popkulturen, og påvirker dagens samfunn i større grad enn det noensinne har gjort. Ifølge <a
+                    href="https://snl.no/sosiale_medier" title="(Enli, G. 2018)">SNL</a> er Facebook det vanligste
+                sosiale mediet i Norge, tett etterfulgt av Twitter, Snapchat, Instagram (eid av Facebook/Meta) og
+                YouTube.
             </p>
-            <div id="text-over-pic">
+            <div class="text-over-pic">
                 <img src="bilder/typersosialemedier.jpg" alt="Et bilde av forskjellige sosiale medier" width="100%">
-                <p id="img__description">Bilde av noen av de mest populære sosiale mediene. </p>
+                <p class="img__description">Bilde av noen av de mest populære sosiale mediene. </p>
             </div>
-            
+
             <p class="tittel">Hvordan har digital kommunikasjon har påvirket verden?</p>
 
-            <p>Digital kommunikasjon har endret verden. Tidligere var informasjonsflyten i stor grad styrt av medier og stater, men sosiale medier har revolusjonert kommunikasjonen mellom verdens innbyggere. Nå kan videoer, bilder og idéer deles fritt mellom enkeltindivider, uten noen form for sensur. Allikevel er det noen sosiale medier som har havnet i hardt vær, som for eksempel <a href="https://www.businessinsider.com/cambridge-analytica-whistleblower-christopher-wylie-facebook-data-2019-10?r=US&IR=T" title="(Chan, R. 2019)">Facebook</a>. Ifølge tidligere annsatte i selskapet Cambridge Analytica har Facebook samlet inn brukerdata for å sende målrettet, politisk reklame mot brukerne sine. Dette viser at plattformene som er brukt kan påvirke brukerne, og at digital kommunikasjon har sine ulemper.</p>
+            <p>Digital kommunikasjon har endret verden. Tidligere var informasjonsflyten i stor grad styrt av medier og
+                stater, men sosiale medier har revolusjonert kommunikasjonen mellom verdens innbyggere. Nå kan videoer,
+                bilder og idéer deles fritt mellom enkeltindivider, uten noen form for sensur. Allikevel er det noen
+                sosiale medier som har havnet i hardt vær, som for eksempel <a
+                    href="https://www.businessinsider.com/cambridge-analytica-whistleblower-christopher-wylie-facebook-data-2019-10?r=US&IR=T"
+                    title="(Chan, R. 2019)">Facebook</a>. Ifølge tidligere annsatte i selskapet Cambridge Analytica har
+                Facebook samlet inn brukerdata for å sende målrettet, politisk reklame mot brukerne sine. Dette viser at
+                plattformene som er brukt kan påvirke brukerne, og at digital kommunikasjon har sine ulemper.</p>
 
             <div class="wrapper">
                 <ul>
@@ -236,11 +252,19 @@
                         </label>
 
                         <ol>
-                            <p id="intro">Når man bruker digitale medier til kommunikasjon er det noen viktige særegenskaper man må huske på. Det er viktig å tenke på noen av disse særtrekkene når man bruker sosiale medier, og disse egenskapene burde endre hvordan man bruker sosiale medier</p>
-                            <li>Varig lagring: Til forskjell fra samtaler mellom personer som møtes fysisk, blir kommunikasjonen i sosiale medier lagret på nettet for all fremtid.</li>
-                            <li>Søking: Digitale identiteter er søkbare gjennom «søk» i Google eller i sosiale medier.</li>
-                            <li>Gjenbruk: På nettet kan vi kopiere, manipulere, klippe og lime et budskap på en slik måte at det kan være vanskelig å skille «originalen» fra «kopien».</li>
-                            <li>Usynlige tilskuere: I det virkelige livet kan vi ha ganske god oversikt over hvem som ser og hører oss. På nettet har vi ingen kontroll med hvem som følger med på hva vi gjør og studerer hvordan vi er.</li>
+                            <p id="intro">Når man bruker digitale medier til kommunikasjon er det noen viktige
+                                særegenskaper man må huske på. Det er viktig å tenke på noen av disse særtrekkene når
+                                man bruker sosiale medier, og disse egenskapene burde endre hvordan man bruker sosiale
+                                medier</p>
+                            <li>Varig lagring: Til forskjell fra samtaler mellom personer som møtes fysisk, blir
+                                kommunikasjonen i sosiale medier lagret på nettet for all fremtid.</li>
+                            <li>Søking: Digitale identiteter er søkbare gjennom «søk» i Google eller i sosiale medier.
+                            </li>
+                            <li>Gjenbruk: På nettet kan vi kopiere, manipulere, klippe og lime et budskap på en slik
+                                måte at det kan være vanskelig å skille «originalen» fra «kopien».</li>
+                            <li>Usynlige tilskuere: I det virkelige livet kan vi ha ganske god oversikt over hvem som
+                                ser og hører oss. På nettet har vi ingen kontroll med hvem som følger med på hva vi gjør
+                                og studerer hvordan vi er.</li>
                             <p id="kilde"><a href="https://kode.cappelendamm.no/"
                                     title="(Langslet et al. 2020, s. 328)">Kode 1</a></p>
                         </ol>
@@ -250,53 +274,22 @@
 
             <p class="tittel">Hvilket moralsk ansvar har sosiale medier?</p>
 
-            <p>Direktør ved Datatilsynet, <a
-                    href="https://www.datatilsynet.no/aktuelt/aktuelle-nyheter-2021/datatilsynet-velger-a-ikke-bruke-facebook/">Bjørn
-                    Erik Thon</a>, mener virksomhetene ikke har god nok kontroll på dataen som sendes inn til
-                Facebooks-nettsider. Han sier <i>«De som ville besøkt Datatilsynets Facebook-side, ville forventet at vi
-                    kunne svare på hva opplysningene om deg blir brukt til. Det vet vi ikke»</i>, og er kjernen til
-                datatilsynet
-                selv trakk seg fra nettsidene.
+            <p>Som tidliger nevt, har selskapene bak de største sosiale mediene vært i noen store kontroverser. Dataen de har samlet inn er ekstremt verdifull, og er en stor del av bunnlinjen til de aller største selskapene. Samtidig er det mange som mener at selskapene har et ansvar når det kommer til hvordan dataen behandles og hvor den ender opp. De samler inn enorme mengder data om hvor du trykker, hva du søker på, og bruker dette til å bygge en individuell interesseprofil for alle plattformens brukere. 
+            </p>
+
+
+            <p>Falsk informasjon og falske nyheter er et stort problem mange sosiale medier står ovenfor. Ifølge <a href="https://www.kff.org/coronavirus-covid-19/press-release/covid-19-misinformation-is-ubiquitous-78-of-the-public-believes-or-is-unsure-about-at-least-one-false-statement-and-nearly-at-third-believe-at-least-four-of-eight-false-statements-tested/"
+                title="(Paolsky, C. 2021)">KFF</a> tror 1/3 av amerikanske voksne på 4/8 usanne påstander om Covid-19. I artikkelen nevnes det at de voksne mottar informasjon/feilinformasjon fra bla. polariserte nyhetskanaler og sosiale medier. Mange mener at det er plattformens ansvar å sensurere/merke feilinformasjon, for å sørge for brukernes sikkerhet. Andre mener at sosiale medier burde være fritt for sensur, og at alle skal kunne få dele det de vil.
             </p>
 
             <div class="text-over-pic">
-                <img src="bilder/Thon.jpg" alt="Bilde av Bjørn Erik Thon" width="100%">
-                <p class="img__description">Bilde av Bjørn Erik Thon, direktør ved Datatilsynet</p>
+                <img src="bilder/facebookcompanies.png" alt="Et bilde av Facebooks datterselskap" height="80%">
+                <p class="img__description">Bilde av Facebooks største datterselskap </p>
             </div>
 
+            <p class="tittel">Hvilken rolle har Facebook i den digitale verden?</p>
 
-            <p>Et av hovedpunktene de i tillegg trekker fram er, ifølge <a
-                    href="https://www.kommunikasjon.no/fagstoff/nyheter/datatilsynet-dropper-facebook">kommunikasjonsforeningen</a>,
-                at det ikke er mulig å
-                inngå en egen avtale med Facebook. Deres standardavtale måler seg ikke opp mot personvernforordningen,
-                altså GDPR. Thon trekker seg så litt tilbake ved å si at det er en refleksjonsak og en vurdering alle
-                virksomheter må ta ettersom det ikke er ulovlig å ha en slik side på sosiale medier. Han ender det med å
-                si at han håper offentlige etater en grundig vurdering i lys av denne nye rapporten.
-            </p>
-
-
-            <p class="tittel"></p>
-
-            <p>Problemet med treffer rammer desverre ikke bare virksomheter, men enkelt mennesker også. I det siste
-                tiåret har det vært flere databrudd hos Facebook, hvor skumle persondetaljer som telefonnummer, navn og
-                bosted lekker ut. Ifølge <a
-                    href="https://www.businessinsider.com/stolen-data-of-533-million-facebook-users-leaked-online-2021-4?r=US&IR=T">Insider</a>,
-                ble over 530 millioner personer rammet av et slik angrep i 2021. Informasjonen var fra til sammen 106
-                land og lagt ut gratis på et hacker forum. Problemet med dette er ikke bare at Facebook mista tilliten
-                til amnge av deres brukere, men fikk også hele brukermiljøet til å spekulere om hvor mye informasjon
-                facebook har om oss.</p>
-
-            <img src="bilder/fb-puppet.webp" alt="Facebook som leker med mennesker som fingerdukker" width="50%">
-
-            <p>Dette er ikke bare skadelig for tilliten til brukerene, men åpner opp for spørsmålet om hvor mye
-                selskaper som Facebook vet om oss. Oppfinnner av the Center for Humane Technology, Tristan Harris, sa
-                under Netflix-dokumentaren, <a href="https://www.netflix.com/no/title/81254224">det sosiale
-                    dilemmaet</a>, <i>“Hvis du ikke betaler for produktet, så er du produktet”</i>. Han fortsetter
-                dette med å si at informasjonen om deg som bruker blir solgt til selskaper for å så skreddsy reklame som
-                passer deg best. Noen vil se på dette som positivt ettersom de finner ting de liker, men samtidig sier
-                det noe om det store bilde. Dokumentaren snakker også med andre eksperter og folk som har jobbet hos
-                Facebook. De forklarer hvordan det er mye informasjon man ikke kan tenke seg som havner i hendene på
-                disse tilsynelatende uskyldige mediene</p>
+            <p>Facebook, som <a href="https://www.statista.com/statistics/272014/global-social-networks-ranked-by-number-of-users/" title="(Dixon, S. 2022)">verdens største sosiale medieplattform</a>, og eier av både Instagram og Whatsapp bærer et enormt ansvar når det kommer til hva som befinner seg på plattformene deres og hvordan de behander brukerdata. De har gjort konkrete tiltak for å sikre innholdet, og bruker bla. <a href="https://www.facebook.com/business/help/2593586717571940?id=673052479947730" title="(Meta)">faktasjekkere</a> for å forhindre at feilinformasjon sprer seg på de største plattformene deres, som for eksempel Facebook og Instagram. Facebook er en av klodens mektigste selskap, og gjennom plattformene sine har de muligheten til å påvirke både mennesker og verden i stor grad.</p>
 
             </div>
         </main>
