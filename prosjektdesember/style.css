@@ -58,6 +58,7 @@ main { /*Setter verdier på hvordan skriften skal være*/
     font-weight: 380;
     line-height: 1.65;
     letter-spacing: 0.005em;
+    margin-bottom: 10px;/*For litt mellomrom mellom bunnen av siden og diven*/
 }
 
 main a:hover {
